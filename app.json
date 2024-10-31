@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/dream/dream-interepet",
+    "pages/assessment/assessment",
+    "pages/book/book",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#efefef"
+  },
+  "style": "v2",
+  "renderer": "skyline",
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "defaultContentBox": true,
+      "tagNameStyleIsolation": "legacy",
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/tabs/home_unselected.png",
+      "selectedIconPath": "/images/tabs/home_selected.png"
+    },
+    {
+      "pagePath": "pages/dream/dream-interepet",
+      "text": "释梦",
+      "iconPath": "/images/tabs/dream_interepret_unselected.png",
+      "selectedIconPath": "/images/tabs/dream_interepret_selected.png"
+    },
+    {
+      "pagePath": "pages/assessment/assessment",
+      "text": "测评",
+      "iconPath": "/images/tabs/assessment_unselected.png",
+      "selectedIconPath": "/images/tabs/assessment_selected.png"
+    },
+    {
+      "pagePath": "pages/book/book",
+      "text": "咨询",
+      "iconPath": "/images/tabs/book_unselected.png",
+      "selectedIconPath": "/images/tabs/book_selected.png"
+    },
+    {
+      "pagePath": "pages/profile/profile",
+      "text": "我的",
+      "iconPath": "/images/tabs/profile_unselected.png",
+      "selectedIconPath": "/images/tabs/profile_selected.png"
+    }
+    ]
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

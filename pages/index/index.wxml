@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<navigation-bar title="燕子心约" back="{{false}}" color="black" background="#B5EAD7"></navigation-bar>
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    Weixin
+  </view>
+</scroll-view>

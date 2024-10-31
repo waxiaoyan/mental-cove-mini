@@ -1,0 +1,20 @@
+{
+  "projectname": "mental-cove-mini",
+  "setting": {
+    "compileHotReLoad": true,
+    "skylineRenderEnable": false
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/assessment/assessment",
+          "pathName": "pages/assessment/assessment",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

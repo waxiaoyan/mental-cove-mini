@@ -1,0 +1,100 @@
+.assessment-container {
+  padding: 20px;
+}
+
+.assessment-item {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  margin-right: 12px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column; /* 保持文本垂直堆叠 */
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.subTitle {
+  font-size: 14px;
+  color: #666;
+  white-space: normal;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.buttons button {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.buttons button:last-child {
+  margin-right: 0;
+}.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.share-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.share-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.square-icon {
+  font-size: 20px;
+  margin-right: 4px;
+}
+
+.arrow-icon {
+  font-size: 16px;
+}
+
+.share-text {
+  font-size: 16px;
+  color: #333;
+}
+
+.share-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f4ff; /* 背景颜色 */
+  color: #597ef7; /* 文字颜色 */
+  border: none; /* 无边框 */
+  border-radius: 20px; /* 圆角边框 */
+  padding: 8px 16px; /* 内边距 */
+  font-size: 16px; /* 文字大小 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
