@@ -14,6 +14,11 @@ Page({
   onLoad(options) {
 
   },
+  mbtiQuestionnaire: function() {
+    wx.navigateTo({
+      url: '/subPackages/pages/assessment/mbti-questionnaire/mbti-questionnaire'
+    });
+  },
 
   /**
    * Lifecycle function--Called when page is initially rendered

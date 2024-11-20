@@ -1,0 +1,106 @@
+.background-image {
+  width: 100%;
+  height: 200vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.paragraph {
+  margin-bottom: 30rpx; /* 段落之间的下边距 */
+  text-indent: 2em; /* 段首缩进 */
+  line-height: 1.6; /* 行高 */
+  font-size: 30rpx; /* 字体大小 */
+  color: #333; /* 字体颜色 */
+  display:flex;
+  flex-wrap: wrap;
+  white-space: pre-wrap;
+  padding: 20rpx 20rpx;
+  margin: 0rpx 10rpx;
+}
+
+page {
+  height: 100%; /* 设置页面高度与视口高度相同 */
+  width: 100%; /* 页面宽度 */
+}
+
+/* 设置滚动视图 */
+.scroll-view {
+  height: calc(100vh - 200rpx); /* 减去导航栏和按钮高度的视窗高度 */
+  width: 100%; /* 全宽 */
+  box-sizing: border-box; /* 内边距不影响宽度计算 */
+}
+/* 容器和内容区域 */
+.container {
+  padding: 30rpx; /* 为整个容器添加内边距 */
+}
+
+.last-section {
+  padding: 30rpx; /* 为每个部分添加内边距 */
+  padding-top: 150rpx;
+  margin-bottom: 60rpx; /* 在底部按钮和屏幕底部之间增加更多空间 */
+}
+
+.title {
+  display: block; /* 标题单独占一行 */
+  text-align: center; /* 标题居中显示 */
+  color: #333; /* 字体颜色 */
+  font-size: 36rpx; /* 字体大小 */
+  font-weight: bold; /* 加粗字体 */
+  margin-bottom: 20rpx; /* 标题与内容之间的间距 */
+  margin-top: 20rpx;
+}
+
+/* 模拟列表项的样式 */
+.list-item {
+  padding: 16rpx 30rpx; /* 统一左右内边距 */
+  margin-left: 0; /* 确保没有左边距 */
+  font-size: 30rpx; /* 字体大小 */
+  text-align: left; /* 文本对齐方式 */
+  line-height: 1.2; /* 行高增加可读性 */
+  color: rgb(70, 69, 69); /* 字体颜色，深灰色 */
+}
+.list-item-title {
+  color: rgb(80, 79, 79);
+  font-size: 36rpx;
+  font-weight: bold;
+  text-align: center; /* 左对齐 */
+}
+.list-item-title-left {
+  color: rgb(80, 79, 79);
+  font-size: 32rpx;
+  font-weight: bold;
+  text-align: left; /* 左对齐 */
+  padding-bottom: 20rpx;
+  padding-top: 40rpx;
+  margin-left: 20rpx; /* 确保没有左边距 */
+}
+/* 移除最后一个列表项的底线 */
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.paragraph-box {
+  padding: 0rpx 30rpx; /* 统一左右内边距 */
+  margin-bottom: 20rpx;
+  line-height: 1.8; /* 行间距 */
+  font-size: 30rpx; /* 字体大小 */
+  color: rgb(70, 69, 69); /* 字体颜色，深灰色 */
+  display:flex;
+  flex-wrap: wrap;
+  white-space: pre-wrap;
+}
+button {
+  display: block; /* 确保按钮单独占用一行 */
+  width: calc(100% - 60rpx); /* 减去边距的宽度 */
+  margin: 0 auto 100rpx auto; /* 居中显示按钮 */
+  padding: 24rpx;
+  font-size: 32rpx;
+  color: #fff;
+  border-radius: 50rpx;
+  box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.25);
+  border: none; /* 移除边框 */
+  background-image: linear-gradient(to right, #5ab4e9, #71a2f7); /* 添加渐变背景色 */
+
+}
+

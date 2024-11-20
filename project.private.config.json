@@ -2,11 +2,26 @@
   "projectname": "mental-cove-mini",
   "setting": {
     "compileHotReLoad": true,
-    "skylineRenderEnable": false
+    "skylineRenderEnable": false,
+    "urlCheck": false
   },
   "condition": {
     "miniprogram": {
       "list": [
+        {
+          "name": "subPackages/pages/assessment/mbti-result/mbti-result",
+          "pathName": "subPackages/pages/assessment/mbti-result/mbti-result",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "subPackages/pages/assessment/mbti-result/mbti-result",
+          "pathName": "subPackages/pages/assessment/mbti-result/mbti-result",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
         {
           "name": "pages/assessment/assessment",
           "pathName": "pages/assessment/assessment",

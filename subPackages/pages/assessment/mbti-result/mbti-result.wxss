@@ -1,0 +1,99 @@
+.background-image {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column; /* 垂直布局 */
+  align-items: center; /* 水平居中 */
+  justify-content: center; /* 垂直居中 */
+  text-align: center; /* 文本居中对齐 */
+  padding: 10px 10px; /* 增加内边距 */
+}
+
+.header-line {
+  margin-bottom: 10px; /* 每一行之间的间距 */
+}
+
+.main-header {
+  font-size: 20px;
+}
+
+.main-header, .personality-type, .type {
+  color: rgb(73, 73, 73); /* 优化文本颜色增强对比 */
+}
+
+.personality-type {
+  font-size: 24px;
+  font-weight: bold;
+}
+.type {
+  font-size: 24px;
+  font-weight: bold;
+  color: #20ca4b;
+}
+
+
+.progress-container {
+  padding: 20px;
+}
+
+.progress-item {
+  margin-bottom: 15px;
+}
+
+.labels-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+}
+
+.left-label, .percentage {
+  margin-right: 5px; /* Add space between label and percentage */
+}
+
+.right-label {
+  color: #999; /* Dynamically set or fixed based on your requirements */
+}
+
+progress {
+  width: 100%;
+  height: 10px; /* Increased height for a better curve effect */
+  border-radius: 5px; /* Rounded corners for curvature */
+  overflow: hidden; /* Ensures the inner bar stays within the borders */
+}
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center; /* 使按钮居中对齐 */
+}
+
+button {
+  width: 90%; /* 让按钮稍宽，更易点击 */
+  margin-top: 10px;
+  padding: 12px; /* 增加填充使按钮更加可触达 */
+  font-size: 16px; /* 增加字体大小提升可读性 */
+  color: #fff;
+  background-image: linear-gradient(to right, #5ab4e9, #71a2f7); /* 添加渐变背景色 */
+  border: none;
+  border-radius: 25px; /* 增加边角圆度 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+  transition: transform 0.3s ease; /* 添加点击时的反馈动画效果 */
+}
+
+.my-text-class {
+  text-indent: 2em;
+}

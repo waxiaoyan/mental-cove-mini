@@ -1,0 +1,26 @@
+<navigation-bar  title="{{type}}人格解析" bind:tap="backToAccessment" back="{{true}}" ></navigation-bar>
+<image src="/subPackages/pages/image/mbti-background.png" class="background-image"></image>
+<view class="header-container">
+    <view class="header-line"><text class="main-header">你的人格类型是：</text></view>
+    <view class="header-line"><text class="personality-type">{{personality}}</text></view>
+    <view class="header-line"><text class="type">{{type}}</text></view>
+</view>
+<view class="progress-container">
+    <view class="progress-item" wx:for="{{percentages}}" wx:key="{{index}}">
+        <view class="labels-container">
+            <view class="left-side">
+                <text class="left-label" style="margin-right: 5px;">{{item.label}}</text>
+                <text class="percentage" style="color: {{progressColors[index]}};">{{item.percentage}}%</text>
+            </view>
+            <text class="right-label" style="color: {{progressColors[4]}};">{{item.secondLabel}}</text>
+        </view>
+        <progress activeColor="{{progressColors[index]}}" backgroundColor="#cfcccc" percent="{{item.percentage}}"></progress>
+    </view>
+</view>
+<view class="buttons-container">
+    <button bindtap="goToPersonality">个性特征</button>
+    <button bindtap="goToAdvantages">工作中的优劣势</button>
+    <button bindtap="goToPreferredCareers">偏好的职业</button>
+    <button bindtap="goToDevelopmentAdvice">个性发展建议</button>
+    <button bindtap="goToLoveAnalysis">爱情分析</button>
+</view>

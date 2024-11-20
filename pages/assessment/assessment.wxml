@@ -1,18 +1,20 @@
-<navigation-bar title="测评" back="{{false}}" color="black" background="#B5EAD7"></navigation-bar>
+<navigation-bar title="心理测评" back="{{false}}" color="black" background="#B5EAD7"></navigation-bar>
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="assessment-container">
     <view class="assessment-item">
       <view class="content">
-        <image src="/pages/assessment/image/16personalities_apesk.png" mode="aspectFit" class="profile-pic"/>
-        <view class="text-container">
+        <image src="/pages/assessment/image/16personalities.png" mode="aspectFill" class="profile-pic"/>
+        <view class="text-block">
           <text class="title">MBTI职业性格测试</text>
           <text class="subTitle">经典93题版测试</text>
+          <view class="buttons">
+          <!-- <text class="subTitle">200人测试过</text> -->
+            <button class="share-button assess" bindtap="mbtiQuestionnaire">测试</button> 
+            <button class="share-button share" bindtap="onShare">
+              <image src="/images/share_button.png" class="icon"/>分享
+            </button>
+          </view>
         </view>
-      </view>
-      <view class="buttons">
-        <button class="share-text" bindtap="joinAssessment">分享</button>
-        <button bindtap="joinAssessment">测评</button>
-        <button class="share-button" bindtap="onShare">分享</button>
       </view>
     </view>
   </view>

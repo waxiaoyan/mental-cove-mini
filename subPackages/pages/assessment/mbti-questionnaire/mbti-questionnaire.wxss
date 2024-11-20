@@ -1,0 +1,95 @@
+/* pages/quiz/quiz.wxss */
+
+.progress-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+progress {
+  width: 100%;
+  height: 10px; /* Increased height for a better curve effect */
+  background-color: #34A853;
+  border-radius: 10px; /* Rounded corners for curvature */
+  overflow: hidden; /* Ensures the inner bar stays within the borders */
+}
+
+.progress-text {
+  position: absolute;
+  top: -15px; /* Adjust as necessary */
+  font-size: 14px;
+  color: #34A853;
+  transition: left 0.3s ease; /* Smooth transition for moving text */
+}
+
+.options {
+  width: 100%; /* Ensures that this container also takes full width */
+  padding: 0 20px 0 20px; /* Padding to match title for left alignment */
+}
+
+.radio-label {
+  display: flex;
+  justify-content: space-between; /* Align content to left and right */
+  align-items: center; /* Center align vertically */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px 10px; /* Increased vertical padding for more height */
+  margin-top: 15px;
+  background-color: #f9f9f9; /* Light grey background */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.radio-label radio {
+  margin: 0; /* Removes default margin */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+
+.question {
+  width: 100%; /* Full width to align the text to the left */
+  text-align: left; /* Aligns the text to the left */
+  font-size: 18px; /* Sets the size of the font */
+  margin-bottom: 8px; /* Space between the question and the options */
+  color: #34A853;
+}
+
+
+.navigation {
+  display: flex;
+  justify-content: space-around; /* 在按钮之间平均分配空间 */
+  position: fixed; /* 固定位置 */
+  left: 0; /* 从左侧开始 */
+  right: 0; /* 延伸到右侧 */
+  bottom: 100px; /* 距离底部20px */
+  padding: 10px 20px; /* 上下各10px的内边距，左右各20px的内边距 */
+  z-index: 100; /* 确保导航栏位于其他内容之上 */
+}
+
+.nav-button {
+  flex-grow: 1;
+  flex-basis: 0; /* Allows for space between the buttons */
+  background-color: #f9f9f9; /* Very light grey background */
+  padding: 12px 0; /* Vertical padding increased, horizontal removed */
+  border-radius: 18px; /* Slightly less rounded corners */
+  border: 1px solid #ddd; /* Subtle border for more definition */
+  text-align: center; /* Ensures text is centered */
+  font-size: 16px; /* Font size for readability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds depth with a subtle shadow */
+  margin: 0 2%; /* Uniform margin to maintain space around */
+}
+
+/* Remove margin specific adjustments to simplify */
+.nav-button:first-child {
+  margin-right: 4%; /* Slight right margin for spacing between buttons */
+}
+
+.nav-button:last-child {
+  margin-left: 4%; /* Slight left margin for spacing between buttons */
+}
