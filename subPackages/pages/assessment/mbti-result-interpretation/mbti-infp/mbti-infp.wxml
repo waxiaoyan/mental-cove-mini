@@ -41,7 +41,7 @@
 
   <view hidden="{{!showCareers}}">
     <text class="title">偏好的职业</text>
-      <text class="list-item-title-left">工作领域:</text>
+      <text class="list-item-title-left">适合的职业:</text>
       <view class="paragraph-box">
           电脑软件设计师、系统分析人员、计算机程序员、研究开发专业人员、数据库管理、故障排除专家、战略规划师、金融规划师、信息服务开发商、变革管理顾问、企业金融律师、大学教授、科研机构研究人员、数学家、物理学家、经济学家、考古学家、历史学家、证券分析师、金融投资顾问、律师、法律顾问、财务专家、侦探、各类发明家、作家、设计师、音乐家、艺术家。
       </view>
@@ -73,16 +73,16 @@
 
   <view hidden="{{!showLove}}">
       <text class="title">爱情分析</text>
-      <view class="list-item-title">爱情特征</view>
-      <view class="paragraph-box">
+      <view class="list-item-title">爱情特征:</view>
+      <view class="love-box">
         <text>INTP 在爱情关系中表现出对伴侣思想深度和智力的高度赏识。他们倾向于与能够在智力上相互激发并且拥有相似世界观的伴侣建立关系。在关系中，INTP 可能不是非常直观地表达情感，但他们通过深入的对话和共享思想来展现对关系的承诺和热情。</text>
       </view>
-      <view class="list-item-title">爱情观</view>
-      <view class="paragraph-box">
+      <view class="list-item-title">爱情观:</view>
+      <view class="love-box">
         <text>INTP看待爱情关系时，重视精神层面的连接多于物质或表面的吸引。他们寻找能够理解并接受他们复杂内心世界的伴侣，同时也希望伴侣能提供新的见解和思考角度。</text>
       </view>
-      <view class="list-item-title">适配的人格</view>
-      <view class="paragraph-box">
+      <view class="list-item-title">适配的人格:</view>
+      <view class="love-box">
         <view>ENTJ：为INTP提供决策上的确定性和方向性，同时享受理智上的挑战。</view>
         <view>ENFP：通过其热情和情感深度补充INTP在情感表达上的不足，同时带来创新的视角。</view>
         <view>INFJ：与INTP在理想和价值观上有深度共鸣，能够在情感和智力上互补。</view>

@@ -41,7 +41,7 @@
 
   <view hidden="{{!showCareers}}">
     <text class="title">偏好的职业</text>
-      <text class="list-item-title-left">工作领域:</text>
+      <text class="list-item-title-left">适合职业:</text>
       <view class="paragraph-box">
           电脑软件设计师、系统分析人员、计算机程序员、研究开发专业人员、数据库管理、故障排除专家、战略规划师、金融规划师、信息服务开发商、变革管理顾问、企业金融律师、大学教授、科研机构研究人员、数学家、物理学家、经济学家、考古学家、历史学家、证券分析师、金融投资顾问、律师、法律顾问、财务专家、侦探、各类发明家、作家、设计师、音乐家、艺术家。
       </view>

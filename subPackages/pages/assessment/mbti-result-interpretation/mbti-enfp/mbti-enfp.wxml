@@ -1,16 +1,15 @@
 <!-- INTJ.wxml -->
-<navigation-bar title="INTP人格" back="{{true}}" ></navigation-bar>
+<navigation-bar title="ENFP人格" back="{{true}}" ></navigation-bar>
   <image src="/subPackages/pages/image/mbti-background.png" class="background-image"></image>
   <scroll-view scroll-y="true" class="scroll-view" scroll-top="{{topNum}}">
     <view hidden="{{!showPersonality}}">
         <text class="title">人格特征</text>
-        <view class="paragraph">INTP，被称为“思想家”，在MBTI个性类型中以其独到的逻辑性和创新性著称。这类人格深受知识和探索未知的驱动，对理解复杂的理论和系统有着天生的能力。INTP喜欢通过逻辑分析和抽象思维来解决问题，常常能够洞察到问题背后的本质。</view>
-        <view class="paragraph">在社交场合，INTP可能显得较为内向和矜持，他们通常不愿意进行浅层次的交流，更喜欢深度的对话。由于他们的思维方式和对个人空间的需要，INTP在大型社交活动中可能不太活跃，但在小圈子中能够提供富有洞见的观点。</view>
-        <view class="paragraph">INTP对个人自由和独立性的需求极高，这使得他们在需要遵循严格规则和程序的工作环境中可能感到束缚。他们适合从事科研、编程、工程设计等领域，这些领域可以让他们发挥其创新思维和问题解决能力。INTP在这些领域可以做到深入且系统地工作，发掘新知识，推动技术或理论的进步。</view>
-        <view class="paragraph">然而，INTP在人际关系和情感表达方面可能遇到挑战。他们往往不擅长识别和表达情感，可能在亲密关系中显得有些脱节。尽管如此，一旦建立了信任关系，INTP可以是忠诚且深思熟虑的伴侣。</view>
-        <view class="paragraph">在思考和决策过程中，INTP倾向于追求完美，可能会在决策时过度分析，寻求所有可能的选项和结果，这有时会导致行动的迟缓。他们需要学会在追求完美和有效行动之间找到平衡。</view>
-        <view class="paragraph">INTP非常重视个人思想的独立性，不喜欢权威对他们思考和行动的干预。在遇到强制性的权威时，他们可能会表现出抵触情绪。因此，INTP在自由度高的工作环境中会更加成功和快乐。</view>
-        <view class="paragraph">尽管INTP在日常活动和例行公事中可能不太投入，但他们对于解决复杂问题和发展新思想充满热情。他们经常沉浸在思考和理论分析中，可以在科学和技术发展中发挥重要作用。</view>
+        <view class="paragraph">ENFP 类型的人堪称真正自由自在的灵魂。他们是聚会的中心人物，不仅因为他们的社交能力，而且因为他们能够在深层的社交和情感关系中找到乐趣。与探险家不同，ENFP不仅仅追求眼前的兴奋和快乐，他们更享受与人建立深刻联系的过程。</view>
+        <view class="paragraph">ENFP 具有高度的直觉性，这种直觉来自于他们的外向直觉,使他们对生活充满好奇心和活力，能够洞察事物的内在含义。他们将生活视为一个错综复杂的谜题，通过情感、同情以及神秘主义的视角来解读世界，总是在寻找更深层的意义。</view>
+        <view class="paragraph">他们不满足于仅有的稳定和安全，追求创造性和自由度。ENFP 们如果发现能激发他们想象力的事物，他们的激情足以使他们成为领导者和专家。然而，他们并不总是喜欢这种领导角色，特别是当这种角色带来的行政负担和例行公事开始影响他们的创新自由时。ENFP在面对无聊和重复的工作时很容易失去耐心，甚至会感到沮丧。</view>
+        <view class="paragraph">ENFP 类型的人也懂得如何放松。他们能够在热情工作的理想主义者和舞池中的自由派之间完美切换，这种能力有时甚至能让最亲近的朋友感到惊讶。给他们一个机会，让他们在人群中建立情感关系，他们就能洞察到能够激发朋友和同事积极性的因素。ENFP相信每个人都应该花时间去了解和表达感情，这一点也使得情感成为他们自然而然的交流话题。</view>
+        <view class="paragraph">ENFP 需要小心不要过度依赖直觉。如果他们对朋友的动机过分揣测和期待，可能会误读信号，使得本可以简单解决的问题变得复杂。这种对社会和谐的过分追求有时会给ENFP带来不小的压力。他们非常敏感和情绪化，很容易感受到自己的行为对他人的影响。</view>
+        <view class="paragraph">ENFP 在完全信任一个想法之前会投入大量时间来探索社会关系、情感和思想。一旦找到了属于自己的位置，他们的想象力、同情心和勇气将会产生巨大的影响，有时甚至能够改变世界。</view>
       <view class="last-section">
         <button bindtap="goToAdvantages">工作中的优劣势 →</button>
       </view>
@@ -19,20 +18,22 @@
     <view hidden="{{!showAdvantages}}">
       <text class="title">工作中的优劣势</text>
       <view class="list">
-      <view class="list-item-title">优势</view>
-      <view class="list-item">1、分析能力强：善于逻辑分析和抽象思维，能够深入挖掘问题的根源。</view>
-      <view class="list-item">2、创新思维：经常提出创新的想法和解决方案，不满足于现状。</view>
-      <view class="list-item">3、独立工作能力：能够在少有外界干扰的环境中高效工作。</view>
-      <view class="list-item">4、自我驱动：对感兴趣的项目有很高的动力，可以持续深入研究。</view>
-      <view class="list-item">5、善于理论构建：能够建立和发展复杂的理论体系。</view>
-      <view class="list-item">6、适应性强：在理解新技术和新系统方面表现出色。</view>
-      <view class="list-item-title">劣势</view>
-      <view class="list-item">1、人际交往：可能在表达情感或理解他人情感上有困难。</view>
-      <view class="list-item">2、细节处理：有时候可能会忽视实际细节，过于关注大局。</view>
-      <view class="list-item">3、决策迟疑：倾向于过多分析而难以做出快速决策。</view>
-      <view class="list-item">4、避免权威：可能对形式和权威持反感态度，不喜欢遵守规则。</view>
-      <view class="list-item">5、情绪管理：在压力大的情况下可能难以管理自己的情绪。</view>
-      <view class="list-item">6、过分理想化：有时可能会对现实持有过于理想化的期望。</view>
+        <view class="list-item-title">优势:</view>
+        <view class="list-item">1、创造力丰富：ENFP擅长创新和寻找新的解决方案，能在工作中引入新观点和方法。</view>
+        <view class="list-item">2、人际关系强：ENFP性格热情友好，能够快速与人建立联系，擅长团队合作。</view>
+        <view class="list-item">3、适应能力强：能快速适应新环境和变化，对于新观念和技术能迅速接纳。</view>
+        <view class="list-item">4、高度热情：对他们感兴趣的工作充满热情，能够激发团队的动力。</view>
+        <view class="list-item">5、沟通能力：具备出色的口才和表达能力，能有效促进信息的交流。</view>
+        <view class="list-item">6、问题解决：善于从多角度看问题，找到创造性的解决方案。</view>
+        <view class="list-item">7、引导变革：不满足于现状，总是寻找改进和创新的方法。</view>
+      <view class="list-item-title">劣势:</view>
+        <view class="list-item">1、注意力分散：可能会在多个项目之间分散注意力，难以长时间专注。</view>
+        <view class="list-item">2、过度理想化：有时对结果的预期过高，与现实存在差距。</view>
+        <view class="list-item">3、冲动决策：可能因为冲动和热情过度而忽略了详细规划。</view>
+        <view class="list-item">4、难以处理细节：对细节处理不够耐心，可能导致执行上的疏漏。</view>
+        <view class="list-item">5、对规则反感：不喜欢被过多的规则和限制束缚，有时会忽视必要的程序。</view>
+        <view class="list-item">6、情绪化：在压力或挑战面前可能表现出情绪波动。</view>
+        <view class="list-item">7、冲突回避：可能会为了避免冲突而牺牲自己的需求或观点。</view>
     </view>
     <view class="last-section">
       <button bindtap="goToCareers">偏好的职业 →</button>
@@ -41,13 +42,13 @@
 
   <view hidden="{{!showCareers}}">
     <text class="title">偏好的职业</text>
-      <text class="list-item-title-left">工作领域:</text>
+      <text class="list-item-title">适合的职业:</text>
       <view class="paragraph-box">
-          电脑软件设计师、系统分析人员、计算机程序员、研究开发专业人员、数据库管理、故障排除专家、战略规划师、金融规划师、信息服务开发商、变革管理顾问、企业金融律师、大学教授、科研机构研究人员、数学家、物理学家、经济学家、考古学家、历史学家、证券分析师、金融投资顾问、律师、法律顾问、财务专家、侦探、各类发明家、作家、设计师、音乐家、艺术家。
+        人力资源经理、变革管理顾问、营销经理、企业／团队培训师、广告客户经理、战略规划人员、宣传人员、事业发展顾问、环保律师、研究助理、播音员、开发总裁、广告创意、广告撰稿人、市场营销和宣传策划、市场调研人员、公关专家、公司对外发言人、儿童教育老师、大学老师（人文类）、心理学工作者、心理辅导和咨询人员、职业规划顾问、社会工作者、演讲家、记者（访谈类）、节目策划和主持人、剧作家、设计师、卡通制作者、主播。
       </view>
-      <view class="list-item-title-left">工作领域:</view>
+      <view class="list-item-title">工作领域:</view>
       <view class="paragraph-box">
-          计算机技术、理论研究、学术领域、专业领域、创造性领域等。
+        未有明显的限定领域。
       </view>  
     <view class="last-section">
       <button bindtap="goToDevelopment">个性发展建议 →</button>
@@ -56,16 +57,15 @@
 
   <view  hidden="{{!showDevelopment}}">
       <text class="title">个性发展建议</text>
-      <view class="list-item">1.  增强情感表达：学习如何表达和理解情感，以改善人际关系。</view>
-      <view class="list-item">2.  完善人际交往：积极参与社交活动，提高社交技能。</view>
-      <view class="list-item">3.  接受非逻辑因素：承认和理解情感和其他非逻辑因素在决策中的作用。</view>
-      <view class="list-item">4.  细节关注：在注重大局的同时，也要留意实际操作中的细节。</view>
-      <view class="list-item">5.  决策果断：培养在必要时快速做决策的能力。</view>
-      <view class="list-item">6.  管理期望：设定实际可行的目标，以防止过分理想化导致的挫败感。</view>
-      <view class="list-item">7.  培养灵活性：学会在不同情境下灵活应对，适度调整自己的行为和期望。</view>
-      <view class="list-item">8.  时间管理：提高时间管理能力，避免过度沉浸在兴趣领域中。</view>
-      <view class="list-item">9.  寻求反馈：主动寻求他人的反馈，以客观评估自己的行为和成效。</view>
-      <view class="list-item">10. 情绪调节：发展有效的应对策略来管理压力和情绪。</view>
+        <view class="list-item">1、提高专注力：练习集中注意力的技巧，如冥想或定时专注练习。</view>
+        <view class="list-item">2、管理期望：设定实际且可达到的目标，避免不切实际的期望。</view>
+        <view class="list-item">3、完善计划能力：学习如何制定详细的计划并坚持执行。</view>
+        <view class="list-item">4、接受和处理冲突：学习如何正面应对冲突，而不是回避。</view>
+        <view class="list-item">5、增强决策能力：通过收集信息和权衡利弊来做出更理智的决策。</view>
+        <view class="list-item">6、学习细节管理：通过实践和培训提高对细节的关注。</view>
+        <view class="list-item">7、时间管理：制定时间表并遵守，以提高效率。</view>
+        <view class="list-item">8、学会说“不”：学习如何拒绝不合适的请求或项目，保护自己的时间和资源。</view>
+        <view class="list-item">9、发展情绪稳定性：通过心理技巧和策略来管理自己的情绪波动。</view>
     <view class="last-section">
       <button bindtap="goToLoveAnalysis">爱情分析 →</button>
     </view>
@@ -73,20 +73,21 @@
 
   <view hidden="{{!showLove}}">
       <text class="title">爱情分析</text>
-      <view class="list-item-title">爱情特征</view>
-      <view class="paragraph-box">
-        <text>INTP 在爱情关系中表现出对伴侣思想深度和智力的高度赏识。他们倾向于与能够在智力上相互激发并且拥有相似世界观的伴侣建立关系。在关系中，INTP 可能不是非常直观地表达情感，但他们通过深入的对话和共享思想来展现对关系的承诺和热情。</text>
+      <view class="list-item-title">爱情特征:</view>
+      <view class="love-box">
+        <text>ENFP 在爱情中追求精神和情感的深度连接。他们富有同情心和理解力，能与伴侣建立深刻的情感联系。在关系中，ENFP热情洋溢，乐于分享自己的感受和想法，但有时可能会因为过度理想化而对伴侣有过高的期望。</text>
       </view>
-      <view class="list-item-title">爱情观</view>
-      <view class="paragraph-box">
-        <text>INTP看待爱情关系时，重视精神层面的连接多于物质或表面的吸引。他们寻找能够理解并接受他们复杂内心世界的伴侣，同时也希望伴侣能提供新的见解和思考角度。</text>
+  
+      <view class="list-item-title">爱情观:</view>
+      <view class="love-box">
+        <text>ENFP 看待爱情时，重视与伴侣之间的情感和精神层面的共鸣。他们寻求能够理解并接受他们多变和情感复杂性的伴侣。ENFP希望爱情关系能成为他们自由表达自我的场所，同时也是他们情感支持和灵感的来源。</text>
       </view>
-      <view class="list-item-title">适配的人格</view>
+      <view class="list-item-title">适配的人格:</view>
       <view class="paragraph-box">
-        <view>ENTJ：为INTP提供决策上的确定性和方向性，同时享受理智上的挑战。</view>
-        <view>ENFP：通过其热情和情感深度补充INTP在情感表达上的不足，同时带来创新的视角。</view>
-        <view>INFJ：与INTP在理想和价值观上有深度共鸣，能够在情感和智力上互补。</view>
-        <view>INTJ：两者在逻辑和独立性上高度契合，可以在追求知识和个人成长的道路上相互支持。</view>
+        <view>INFJ：与ENFP在情感和理想上有深度共鸣，能够提供情感上的理解和支持。</view>
+        <view>INTJ：提供思考的深度和结构，帮助ENFP更好地组织和实现他们的理想。</view>
+        <view>ENTJ：能够在追求目标和职业发展上给予ENFP指导和动力。</view>
+        <view>ESFJ：通过其热情和关怀性格，帮助ENFP处理日常生活中的细节，同时提供稳定的情感支持。</view>
       </view>
 
   </view>

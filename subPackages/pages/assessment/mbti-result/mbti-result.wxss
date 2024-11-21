@@ -93,7 +93,3 @@ button {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
   transition: transform 0.3s ease; /* 添加点击时的反馈动画效果 */
 }
-
-.my-text-class {
-  text-indent: 2em;
-}

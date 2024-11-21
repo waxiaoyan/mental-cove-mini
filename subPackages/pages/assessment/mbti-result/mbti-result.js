@@ -5,7 +5,7 @@ Page({
    * Page initial data
    */
   data: {
-    type:'',
+    mbtiType:'ENTJ',
     personality : '',
     desc: '',
     field: '',
@@ -28,7 +28,7 @@ Page({
       try {
         const results = JSON.parse(decodeURIComponent(options.results));
         this.setData({
-          type: results.type,
+          mbtiType: results.type,
           personality: results.personality,
           desc: results.desc,
           field: results.field,
@@ -95,34 +95,35 @@ Page({
 
   },
   goToPersonality() {
-    let mbtiType = 'intp';
+    let mbtiType = this.data.mbtiType.toLowerCase();
+    console.log("mbtitype:" + mbtiType)
     wx.navigateTo({
       url: '/subPackages/pages/assessment/mbti-result-interpretation/mbti-' + mbtiType + '/mbti-' + mbtiType + '?section=personality'
     });
   },
   goToAdvantages() {
-    let mbtiType = 'intp';
+    let mbtiType = this.data.mbtiType.toLowerCase();
     wx.navigateTo({
       url: '/subPackages/pages/assessment/mbti-result-interpretation/mbti-' + mbtiType + '/mbti-' + mbtiType + '?section=advantages'
     });
   },
   goToPreferredCareers() {
-    let mbtiType = 'intp';
+    let mbtiType = this.data.mbtiType.toLowerCase();
     wx.navigateTo({
       url: '/subPackages/pages/assessment/mbti-result-interpretation/mbti-' + mbtiType + '/mbti-' + mbtiType + '?section=careers'
     });
   },
   goToDevelopmentAdvice() {
-    let mbtiType = 'intp';
+    let mbtiType = this.data.mbtiType.toLowerCase();
     wx.navigateTo({
       url: '/subPackages/pages/assessment/mbti-result-interpretation/mbti-' + mbtiType + '/mbti-' + mbtiType + '?section=development'
     });
   },
   goToLoveAnalysis() {
-    let mbtiType = 'intp';
+    let mbtiType = this.data.mbtiType.toLowerCase();
     wx.navigateTo({
       url: '/subPackages/pages/assessment/mbti-result-interpretation/mbti-' + mbtiType + '/mbti-' + mbtiType + '?section=love'
     });
   }
-  
+
 })
