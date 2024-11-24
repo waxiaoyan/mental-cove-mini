@@ -5,7 +5,7 @@ Page({
    * Page initial data
    */
   data: {
-    mbtiType:'ENTJ',
+    mbtiType:'ESTJ',
     personality : '',
     desc: '',
     field: '',

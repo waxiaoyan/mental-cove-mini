@@ -29,10 +29,6 @@ page {
   width: 100%; /* 全宽 */
   box-sizing: border-box; /* 内边距不影响宽度计算 */
 }
-/* 容器和内容区域 */
-.container {
-  padding: 30rpx; /* 为整个容器添加内边距 */
-}
 
 .last-section {
   padding: 30rpx; /* 为每个部分添加内边距 */
@@ -64,7 +60,7 @@ page {
   font-size: 34rpx;
   font-weight: bold;
   text-align: left; /* 左对齐 */
-  margin-left: 30rpx; /* 确保没有左边距 */
+  margin-left: 20rpx; /* 确保没有左边距 */
   margin-top: 30rpx;
 }
 
@@ -74,7 +70,7 @@ page {
 }
 
 .paragraph-box {
-  padding: 0rpx 30rpx; /* 统一左右内边距 */
+  padding: 0rpx 20rpx; /* 统一左右内边距 */
   margin-bottom: 10rpx;
   line-height: 1.8; /* 行间距 */
   font-size: 32rpx; /* 字体大小 */
@@ -85,7 +81,7 @@ page {
 }
 
 .love-box {
-  padding: 0rpx 30rpx; /* 统一左右内边距 */
+  padding: 0rpx 20rpx; /* 统一左右内边距 */
   margin-bottom: 30rpx;
   margin-top: 0rpx;
   line-height: 1.8; /* 行间距 */

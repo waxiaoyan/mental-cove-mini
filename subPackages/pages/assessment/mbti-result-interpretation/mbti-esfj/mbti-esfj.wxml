@@ -1,16 +1,14 @@
 <!-- INTJ.wxml -->
-<navigation-bar title="INTP人格" back="{{true}}" ></navigation-bar>
+<navigation-bar title="ESFJ人格" back="{{true}}" ></navigation-bar>
   <image src="/subPackages/pages/image/mbti-background.png" class="background-image"></image>
   <scroll-view scroll-y="true" class="scroll-view" scroll-top="{{topNum}}">
     <view hidden="{{!showPersonality}}">
         <text class="title">人格特征</text>
-        <view class="paragraph">INTP，被称为“思想家”，在MBTI个性类型中以其独到的逻辑性和创新性著称。这类人格深受知识和探索未知的驱动，对理解复杂的理论和系统有着天生的能力。INTP喜欢通过逻辑分析和抽象思维来解决问题，常常能够洞察到问题背后的本质。</view>
-        <view class="paragraph">在社交场合，INTP可能显得较为内向和矜持，他们通常不愿意进行浅层次的交流，更喜欢深度的对话。由于他们的思维方式和对个人空间的需要，INTP在大型社交活动中可能不太活跃，但在小圈子中能够提供富有洞见的观点。</view>
-        <view class="paragraph">INTP对个人自由和独立性的需求极高，这使得他们在需要遵循严格规则和程序的工作环境中可能感到束缚。他们适合从事科研、编程、工程设计等领域，这些领域可以让他们发挥其创新思维和问题解决能力。INTP在这些领域可以做到深入且系统地工作，发掘新知识，推动技术或理论的进步。</view>
-        <view class="paragraph">然而，INTP在人际关系和情感表达方面可能遇到挑战。他们往往不擅长识别和表达情感，可能在亲密关系中显得有些脱节。尽管如此，一旦建立了信任关系，INTP可以是忠诚且深思熟虑的伴侣。</view>
-        <view class="paragraph">在思考和决策过程中，INTP倾向于追求完美，可能会在决策时过度分析，寻求所有可能的选项和结果，这有时会导致行动的迟缓。他们需要学会在追求完美和有效行动之间找到平衡。</view>
-        <view class="paragraph">INTP非常重视个人思想的独立性，不喜欢权威对他们思考和行动的干预。在遇到强制性的权威时，他们可能会表现出抵触情绪。因此，INTP在自由度高的工作环境中会更加成功和快乐。</view>
-        <view class="paragraph">尽管INTP在日常活动和例行公事中可能不太投入，但他们对于解决复杂问题和发展新思想充满热情。他们经常沉浸在思考和理论分析中，可以在科学和技术发展中发挥重要作用。</view>
+        <view class="paragraph">ESFJ类型的人是极具社交能力的群体，他们享受组织聚会并努力让每个人都感到快乐。他们通常是中学里的拉拉队员或四分卫，成年后依然是朋友圈的中心人物。他们注重社会地位和他人看法，更关心实际事务和人际关系，而不是抽象理论。</view>
+        <view class="paragraph">ESFJ以利他主义著称，深信传统道德和社会规范。他们认为正确的行为应符合社会规则和法律，而非单纯的哲学或神秘主义。这种对传统的尊重有时也要求他们理解，不同的人可能有不同的观点和生活背景。</view>
+        <view class="paragraph">在工作和家庭中，ESFJ推崇等级和秩序。他们努力工作，希望通过自己的努力获得一定的权力和地位，以便为他人设定明确和稳定的角色。他们的这种管理能力，使得他们在组织和领导方面特别出色，无论是在家庭还是职场。</view>
+        <view class="paragraph">ESFJ享受与人互动的快乐，特别是在社交场合，他们可以自如地与人交谈，使聚会氛围轻松愉快。他们擅长倾听和记忆他人的细节，这使他们能够在关键时刻给予朋友支持和帮助。如果社交场合出现紧张氛围，ESFJ会察觉并尽力缓和。</view>
+       <view  class="paragraph">虽然ESFJ不喜欢冲突和对抗，但他们需要学会接受并处理冲突，因为在生活中总会遇到不同意见。他们需要意识到，不是所有人都会对他们的计划感兴趣，这并不总是针对他们个人或他们的努力。</view>
       <view class="last-section">
         <button bindtap="goToAdvantages">工作中的优劣势 →</button>
       </view>
@@ -19,20 +17,24 @@
     <view hidden="{{!showAdvantages}}">
       <text class="title">工作中的优劣势</text>
       <view class="list">
-      <view class="list-item-title">优势</view>
-      <view class="list-item">1、分析能力强：善于逻辑分析和抽象思维，能够深入挖掘问题的根源。</view>
-      <view class="list-item">2、创新思维：经常提出创新的想法和解决方案，不满足于现状。</view>
-      <view class="list-item">3、独立工作能力：能够在少有外界干扰的环境中高效工作。</view>
-      <view class="list-item">4、自我驱动：对感兴趣的项目有很高的动力，可以持续深入研究。</view>
-      <view class="list-item">5、善于理论构建：能够建立和发展复杂的理论体系。</view>
-      <view class="list-item">6、适应性强：在理解新技术和新系统方面表现出色。</view>
-      <view class="list-item-title">劣势</view>
-      <view class="list-item">1、人际交往：可能在表达情感或理解他人情感上有困难。</view>
-      <view class="list-item">2、细节处理：有时候可能会忽视实际细节，过于关注大局。</view>
-      <view class="list-item">3、决策迟疑：倾向于过多分析而难以做出快速决策。</view>
-      <view class="list-item">4、避免权威：可能对形式和权威持反感态度，不喜欢遵守规则。</view>
-      <view class="list-item">5、情绪管理：在压力大的情况下可能难以管理自己的情绪。</view>
-      <view class="list-item">6、过分理想化：有时可能会对现实持有过于理想化的期望。</view>
+        <view class="list-item-title">优势:</view>
+          <view class="list-item">1、人际交往能力强：ESFJ善于与人沟通，能迅速建立起良好的人际关系。</view>
+          <view class="list-item">2、组织能力出众：擅长规划和组织活动，确保每个细节都得到妥善处理。</view>
+          <view class="list-item">3、责任心强：对自己的工作充满责任感，总是尽心尽力完成任务。</view>
+          <view class="list-item">4、同理心：能够理解并关注同事和客户的感受和需求。</view>
+          <view class="list-item">5、乐于助人：乐于帮助他人，无论是职场上还是私人生活中。</view>
+          <view class="list-item">6、细节控：关注细节，确保所有工作都按照高标准完成。</view>
+          <view class="list-item">7、忠诚度高：对工作和组织忠诚，是可靠的团队成员。</view>
+
+      <view class="list-item-title">劣势:</view>
+        <view class="list-item">1、过度敏感：可能会对批评和冲突过于敏感。</view>
+        <view class="list-item">2、难以拒绝：难以拒绝他人的请求，有时候会因此承担过多的工作。</view>
+        <view class="list-item">3、依赖他人认可：高度依赖他人的认可和赞赏，缺乏时可能感到沮丧。</view>
+        <view class="list-item">4、不善于面对变化：不太适应快速变化的环境，对未知感到不安。</view>
+        <view class="list-item">5、有时过于保守：害怕冒险，可能错过一些创新和发展的机会。</view>
+        <view class="list-item">6、情绪化：在压力或冲突的情况下可能表现得情绪化。</view>
+        <view class="list-item">7、偏向传统：倾向于坚持传统的方法，不太愿意接受新的观点。</view>
+
     </view>
     <view class="last-section">
       <button bindtap="goToCareers">偏好的职业 →</button>
@@ -41,13 +43,13 @@
 
   <view hidden="{{!showCareers}}">
     <text class="title">偏好的职业</text>
-      <text class="list-item-title-left">工作领域:</text>
+      <text class="list-item-title">适合的职业:</text>
       <view class="paragraph-box">
-          电脑软件设计师、系统分析人员、计算机程序员、研究开发专业人员、数据库管理、故障排除专家、战略规划师、金融规划师、信息服务开发商、变革管理顾问、企业金融律师、大学教授、科研机构研究人员、数学家、物理学家、经济学家、考古学家、历史学家、证券分析师、金融投资顾问、律师、法律顾问、财务专家、侦探、各类发明家、作家、设计师、音乐家、艺术家。
+        劳工关系调解人、零售经理、商品规划师、团队培训人员、旅游项目经营者、演员、特别事件的协调人、社会工作者、旅游销售经理、融资者、保险代理／经纪人、幼教、职业策划咨询师、旅游管理/导游、促销员、海洋生物学家、精品店、商场销售人员、娱乐、餐饮业客户经理、房地产销售人员、汽车销售人员、市场营销人员、广告企业中的设计师、创意人员、客户经理、时装设计和表演人员、摄影师、主播、脱口秀演员、社区工作人员、义工、公共关系专家、健身和运动教练。
       </view>
-      <view class="list-item-title-left">工作领域:</view>
+      <view class="list-item-title">工作领域:</view>
       <view class="paragraph-box">
-          计算机技术、理论研究、学术领域、专业领域、创造性领域等。
+        消费类商业、服务业领域 、广告业、娱乐业领域 、旅游业、社区服务等。
       </view>  
     <view class="last-section">
       <button bindtap="goToDevelopment">个性发展建议 →</button>
@@ -56,16 +58,15 @@
 
   <view  hidden="{{!showDevelopment}}">
       <text class="title">个性发展建议</text>
-      <view class="list-item">1.  增强情感表达：学习如何表达和理解情感，以改善人际关系。</view>
-      <view class="list-item">2.  完善人际交往：积极参与社交活动，提高社交技能。</view>
-      <view class="list-item">3.  接受非逻辑因素：承认和理解情感和其他非逻辑因素在决策中的作用。</view>
-      <view class="list-item">4.  细节关注：在注重大局的同时，也要留意实际操作中的细节。</view>
-      <view class="list-item">5.  决策果断：培养在必要时快速做决策的能力。</view>
-      <view class="list-item">6.  管理期望：设定实际可行的目标，以防止过分理想化导致的挫败感。</view>
-      <view class="list-item">7.  培养灵活性：学会在不同情境下灵活应对，适度调整自己的行为和期望。</view>
-      <view class="list-item">8.  时间管理：提高时间管理能力，避免过度沉浸在兴趣领域中。</view>
-      <view class="list-item">9.  寻求反馈：主动寻求他人的反馈，以客观评估自己的行为和成效。</view>
-      <view class="list-item">10. 情绪调节：发展有效的应对策略来管理压力和情绪。</view>
+          <view class="list-item">1、学会处理批评：学习如何从批评中吸取有用的信息，而不是感到受伤。</view>
+          <view class="list-item">2、设置界限：学会说“不”，避免过度承诺超出自己能力范围的事务。</view>
+          <view class="list-item">3、提高适应性：尝试接受和适应变化，将其视为个人和职业成长的机会。</view>
+          <view class="list-item">4、发展自我肯定：增强自信，减少对外界认可的依赖。</view>
+          <view class="list-item">5、探索新方法：尝试新的工作方法和技术，拥抱创新。</view>
+          <view class="list-item">6、管理情绪：学习更有效的情绪管理技巧，特别是在工作中。</view>
+          <view class="list-item">7、增强决策能力：通过分析不同选项的利弊，提高自己的独立决策能力。</view>
+          <view class="list-item">8、培养批判性思维：学会质疑和分析，而不仅仅是接受传统观念。</view>
+          <view class="list-item">9、保持专业和私人生活的平衡：确保工作和个人生活之间有健康的界限。</view>
     <view class="last-section">
       <button bindtap="goToLoveAnalysis">爱情分析 →</button>
     </view>
@@ -73,20 +74,22 @@
 
   <view hidden="{{!showLove}}">
       <text class="title">爱情分析</text>
-      <view class="list-item-title">爱情特征</view>
-      <view class="paragraph-box">
-        <text>INTP 在爱情关系中表现出对伴侣思想深度和智力的高度赏识。他们倾向于与能够在智力上相互激发并且拥有相似世界观的伴侣建立关系。在关系中，INTP 可能不是非常直观地表达情感，但他们通过深入的对话和共享思想来展现对关系的承诺和热情。</text>
+      <view class="list-item-title">爱情特征:</view>
+      <view class="love-box">
+        <text>ESFJ在爱情中表现出极高的关照和承诺，他们的伴侣通常会感受到被深爱和被关心。ESFJ非常重视伴侣和家庭关系的和谐，会尽一切努力维护这种和谐。他们通常会为了满足伴侣的需要而不惜牺牲自己的利益。这种关系中的忠诚和奉献精神是他们的主要特征。</text>
       </view>
-      <view class="list-item-title">爱情观</view>
-      <view class="paragraph-box">
-        <text>INTP看待爱情关系时，重视精神层面的连接多于物质或表面的吸引。他们寻找能够理解并接受他们复杂内心世界的伴侣，同时也希望伴侣能提供新的见解和思考角度。</text>
+  
+      <view class="list-item-title">爱情观:</view>
+      <view class="love-box">
+        <text>ESFJ看待爱情时，强调稳定性和安全感，他们寻找能够提供情感支持和实际帮助的伴侣。对ESFJ来说，实际的行动和承诺比言语上的甜言蜜语更为重要。他们期望的是一段稳固、长久的关系，不太追求短暂的激情或冒险。
+</text>
       </view>
-      <view class="list-item-title">适配的人格</view>
+      <view class="list-item-title">适配的人格:</view>
       <view class="paragraph-box">
-        <view>ENTJ：为INTP提供决策上的确定性和方向性，同时享受理智上的挑战。</view>
-        <view>ENFP：通过其热情和情感深度补充INTP在情感表达上的不足，同时带来创新的视角。</view>
-        <view>INFJ：与INTP在理想和价值观上有深度共鸣，能够在情感和智力上互补。</view>
-        <view>INTJ：两者在逻辑和独立性上高度契合，可以在追求知识和个人成长的道路上相互支持。</view>
+        <view>ISTJ：同样重视秩序和家庭，能提供ESFJ所需的稳定性。</view>
+        <view>ISFJ：两者都非常关注家庭和关怀他人，能够形成深厚的情感连接。</view>
+        <view>ENFP：提供新颖和冒险的元素，平衡ESFJ的传统性。</view>
+        <view>INFJ：深层的情感和价值观共鸣，能互相理解和支持。 </view>
       </view>
 
   </view>

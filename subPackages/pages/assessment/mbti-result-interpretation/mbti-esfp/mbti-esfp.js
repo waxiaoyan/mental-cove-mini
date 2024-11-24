@@ -68,7 +68,8 @@ Page({
       showAdvantages: false,
       showCareers: true,
       showDevelopment: false,
-      showLove: false
+      showLove: false,
+      topNum: 0
     });
   },
   goToDevelopment() {
@@ -77,7 +78,8 @@ Page({
       showAdvantages: false,
       showCareers: false,
       showDevelopment: true,
-      showLove: false
+      showLove: false,
+      topNum: 0
     });
   },
   goToLoveAnalysis() {
@@ -86,7 +88,8 @@ Page({
       showAdvantages: false,
       showCareers: false,
       showDevelopment: false,
-      showLove: true
+      showLove: true,
+      topNum: 0
     });
   },
 
