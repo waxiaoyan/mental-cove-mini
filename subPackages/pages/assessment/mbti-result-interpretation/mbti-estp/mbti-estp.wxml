@@ -4,11 +4,11 @@
   <scroll-view scroll-y="true" class="scroll-view" scroll-top="{{topNum}}">
     <view hidden="{{!showPersonality}}">
         <text class="title">人格特征</text>
-        <view class="paragraph">ESTJ是传统和秩序的代表，利用他们对正确，错误，和社会标准的理解来团结家庭和社区群体。ESTJ非常可靠和勤奋，他们有很强的道德规范，始终以正确的方式做正确的事。</view>
-        <view class="paragraph">ESTJ是现实主义者，他们喜欢学习可以立即在现实世界中使用的事物，但往往对抽象或理论的事物失去兴趣。</view>
-        <view class="paragraph">ESTJ重视传统、规则和安全，常常在监督角色中表现出色，他们努力确保团队成员遵守上级制定的规则、传统和法律。</view>
-        <view class="paragraph">ESTJ的忠诚和耐心无与伦比，无论他们走到哪里，都会带来很多稳定、安全和保障。一旦ESTJ对你产生了忠诚感，他们就会对你忠诚一辈子。这种类型的人言出必行，如果同事或下属的无能懒惰甚至不正直威胁到承诺的兑现，他们绝不会压抑怒火。这令他们看起来不灵活，是所有守护者（SJ）共有的特点，但这并不是因为ESTJ顽固不化，而是他们真的相信是这些价值使社会得以运行。</view>
-       <view  class="paragraph">ESTJ最大的挑战是需要意识到不是每个人都走同样的路或以同样的方式贡献着。真正的领导者既能发现个人的强项，也能发现团体的，并鼓励大家讨论每个人的想法。这样一来ESTJ就能掌握所有事实，并领导大家走向最令人满意的方向。</view>
+        <view class="paragraph">ESTP在环境中总是显而易见，在聚会上发现他们的最好方式就是去找那些在人群中穿梭自如的人。他们带着直接而朴实的幽默谈笑风生，喜欢成为人群中的焦点。如果有观众被邀请上台，他们会当志愿者，或推荐一个害羞的朋友。</view>
+        <view class="paragraph">ESTP们的对话充满活力，也不乏智慧，他们喜欢讨论此时此刻的事，或干脆速战速决，在过程中改正错误，而不是空坐着思考备用计划和撤退方案。</view>
+        <view class="paragraph">ESTP是最容易冒险的人格类型。他们活在当下说做就做，是风暴的中心。ESTP类型的人享受戏剧性，激情和快感，不是为情绪的激动而是对他们的逻辑思维的刺激。他们会根据眼前事实通过快速的理性思维做决策。这使他们在学校和其他秩序井然的组织里遇到困难。这不是因为他们不聪明，事实上他们可以做得很好，而是严格的说教式的教学不符合他们亲自动手的学习方法。需要很成熟才能意识到这是成功所需的重要步骤，并能创造很多令人激动的机会。</view>
+        <view class="paragraph">ESTP也许是最有知觉力的类型，擅长发现微小的变化。无论是表情，衣着还是习惯，这种类型的人能发现别人根本注意不到的隐藏着的思想和动机。ESTP随时利用这些观察，指出变化，提出问题，而不考虑别人的感受。</view>
+       <view  class="paragraph">ESTP充满了热情和精力，和一个理性的，偶尔不够专注的头脑。他们具有启发性，令人信服，又丰富彩，是天生的团队领导者，带领大家走在不寻常的路上，时刻使周围充满生机与激情。他们遇到的真正挑战是把这些品质放在有建设性的和值得的目标上。</view>
       
       <view class="last-section">
         <button bindtap="goToAdvantages">工作中的优劣势 →</button>
@@ -19,25 +19,24 @@
       <text class="title">工作中的优劣势</text>
       <view class="list">
         <view class="list-item-title">优势:</view>
-          <view class="list-item">1、组织能力强：ESTJ能有效管理资源和人员，确保项目按时完成。</view>
-          <view class="list-item">2、坚定果断：在决策时表现出明确和坚定的态度，能迅速做出决策。</view>
-          <view class="list-item">3、责任感强：对工作认真负责，确保所有任务达到预期标准。</view>
-          <view class="list-item">4、实际操作：重视实际结果，确保工作有具体的输出和成效。</view>
-          <view class="list-item">5、遵守规则：尊重并执行组织的规章制度，维护团队纪律。</view>
-          <view class="list-item">6、领导能力：天生的领导者，擅长指导他人并推动团队前进。</view>
-          <view class="list-item">7、沟通明确：表达清晰，能确保信息准确传达。</view>
-          <view class="list-item">8、应对挑战：面对挑战时能保持冷静，有效解决问题。</view>
+        <view class="list-item">1、应变能力强：能快速适应新环境和突发情况。</view>
+        <view class="list-item">2、实际操作：擅长处理具体和实际的任务。</view>
+        <view class="list-item">3、社交能力出众：在人际交往中表现自如，易于建立工作关系。</view>
+        <view class="list-item">4、直觉敏锐：直觉性强，能快速捕捉到问题的核心。</view>
+        <view class="list-item">5、能量充沛：工作中充满活力和热情。</view>
+        <view class="list-item">6、决策迅速：能迅速作出决策，适合高压环境。</view>
+        <view class="list-item">7、风险承担：不畏风险，愿意尝试新方法。 </view>
 
       <view class="list-item-title">劣势:</view>
      </view>
-        <view class="list-item">1、固执己见：有时过于坚持自己的看法，不易接受新观点。</view>
-        <view class="list-item">2、缺乏弹性：对变化和非计划的事件反应不够灵活。</view>
-        <view class="list-item">3、人际关系僵硬：在强调效率的同时，可能忽略人际关系的维护。</view>
-        <view class="list-item">4、过度控制：有时候可能会对下属或团队成员过度控制。</view>
-        <view class="list-item">5、情感表达有限：不太擅长表达个人情感，可能显得冷漠。</view>
-        <view class="list-item">6、批评直接：批评时可能过于直接，伤害他人情感。</view>
-        <view class="list-item">7、忽视创新：可能过于侧重传统方法，不够鼓励创新。</view>
-        <view class="list-item">8、对抗性强：在意见冲突时可能显得过于对抗，不利于团队和谐。</view>
+     <view class="list-item">1、缺乏耐心：对细节和需要长期关注的任务缺乏耐心。</view>
+	<view class="list-item">2、计划性差：可能对长期计划和战略规划不感兴趣。</view>
+	<view class="list-item">3、冲动行事：有时可能因冲动行事而忽略后果。</view>
+	<view class="list-item">4、抗拒规则：可能不喜欢遵守既定规则和程序。</view>
+	<view class="list-item">5、忽视长远影响：可能过于关注即时结果，忽视长远影响。</view>
+	<view class="list-item">6、情绪化：在压力大时可能表现得情绪化。</view>
+	<view class="list-item">7、不接受批评：对于批评可能反应过激或抵触。</view>
+
     <view class="last-section">
       <button bindtap="goToCareers">偏好的职业 →</button>
     </view>
@@ -47,11 +46,11 @@
     <text class="title">偏好的职业</text>
       <text class="list-item-title">适合的职业:</text>
       <view class="paragraph-box">
-        公司首席执行官、军官、预算分析师、药剂师、房地产经纪人、保险经纪人、教师（贸易/工商类）、物业管理、银行官员、项目经理、数据库经理、信息总监、后勤与供应经理、业务运作顾问、证券经纪人、电脑分析人员、保险代理、普通承包商、工厂主管、大、中型外资企业员工、业务经理、中层经理、职业经理人、各类中小型企业主管和业主。
+        企业家、业务运作顾问、个人理财专家、证券经纪人、银行职员、预算分析者、技术培训人员、综合网络专业人士、旅游代理、促销商、手工艺人、新闻记者、土木工程师、工业工程师、机械工程师、贸易商、批发商、中间商、零售商、房地产经纪人、保险经济人、汽车销售人员、私家侦探、警察、餐饮、娱乐及其他各类服务业的业主或主管、特许经营者、自由职业者、娱乐节目主持人、体育节目评论、脱口秀、音乐、舞蹈表演者、健身教练
       </view>
       <view class="list-item-title">工作领域:</view>
       <view class="paragraph-box">
-        无明显限定领域特征。
+        贸易、商业、某些特殊领域、服务业、金融证券业、娱乐、体育、艺术领域等。
       </view>  
     <view class="last-section">
       <button bindtap="goToDevelopment">个性发展建议 →</button>
@@ -60,17 +59,16 @@
 
   <view  hidden="{{!showDevelopment}}">
       <text class="title">个性发展建议</text>
-
-      <view class="list-item">1、培养灵活性：尝试接受并适应不断变化的环境和条件。</view>
-      <view class="list-item">2、提高情感智力：学习如何更好地理解和管理自己的情绪，以及如何更有效地与他人沟通情感。</view>
-      <view class="list-item">3、接受并尊重他人观点：学习倾听并尊重不同的意见和观点。</view>
-      <view class="list-item">4、发展创新思维：鼓励和尝试新的方法和技术，以提高工作效率和效果。</view>
-      <view class="list-item">5、学习放手：适度放手，信任团队成员的能力，促进团队自主性。</view>
-      <view class="list-item">6、改善人际关系：在维护效率的同时，也要注意与同事建立和谐的关系。</view>
-      <view class="list-item">7、处理批评：学习更建设性和富有同情心的批评方式。</view>
-      <view class="list-item">8、增加耐心：在面对困难和挑战时，学会保持耐心，避免急躁。</view>
-      <view class="list-item">9、寻求反馈：定期寻求他人对自己工作和行为的反馈，以持续改进和发展。</view>
-    <view class="last-section">
+      <view class="list-item">1、培养耐心：通过长期目标设定和小步骤实施，增强对复杂任务的关注。</view>
+      <view class="list-item">2、改善计划能力：通过学习和实践提高计划和组织能力。</view>
+      <view class="list-item">3、管理冲动：学习在做决策前进行深思熟虑，控制冲动行为。</view>
+      <view class="list-item">4、接受规则：理解并接受规则和约束对保持秩序的重要性。</view>
+      <view class="list-item">5、考虑长期后果：在决策时考虑到长远的可能结果。</view>
+      <view class="list-item">6、情绪管理：通过技巧如冥想、正念等方式管理工作压力和情绪。</view>
+      <view class="list-item">7、开放接受反馈：学习如何客观接受并利用反馈进行自我改进。</view>
+      <view class="list-item">8、增强人际关系：通过提升沟通技巧和同理心，改善与同事的关系。</view>
+      <view class="list-item">9、学习倾听：培养更好的倾听技巧，确保理解他人观点和需求。 </view>
+      <view class="last-section">
       <button bindtap="goToLoveAnalysis">爱情分析 →</button>
     </view>
   </view>
@@ -78,20 +76,20 @@
       <text class="title">爱情分析</text>
       <view class="list-item-title">爱情特征:</view>
       <view class="love-box">
-        <text>ESTJ在爱情中表现出极高的忠诚度和责任感，他们会为伴侣和家庭提供坚实的支持。他们倾向于传统的恋爱关系，强调承诺和稳定性。ESTJ通常非常实际，会努力确保关系中的物质和情感需求得到满足。</text>
+        <text>ESTP在爱情中表现出极高的热情和冒险精神，他们寻求刺激和乐趣，希望与伴侣共享兴奋的体验。在关系中，他们直率且真实，但有时可能因为追求即时满足而忽略深层的情感联系。</text>
       </view>
   
       <view class="list-item-title">爱情观:</view>
       <view class="love-box">
-        <text>ESTJ看待爱情关系时非常认真，他们看重结构和秩序，希望通过明确的期望和目标来维护关系。他们通常不太浪漫，但会通过实际行动表达爱意，如组织家庭活动或解决伴侣的实际问题。
+        <text>ESTP看待爱情时寻求激情和新鲜感，他们重视物质享受和生活质量，但也需学习如何为关系提供稳定性和持久承诺。
 </text>
       </view>
       <view class="list-item-title">适配的人格:</view>
       <view class="paragraph-box">
-        <view>ISFJ：稳定可靠，能够满足ESTJ对秩序和安全的需求。</view>
-        <view>ESFP：活泼开朗，能给ESTJ的生活带来乐趣和新鲜感。</view>
-        <view>ENTJ：同样注重效率和目标，能与ESTJ在职业和生活中共同成长。</view>
-        <view>ISTJ：与ESTJ有类似的价值观和生活方式，能建立稳定和谐的关系。</view>
+        <view>ISFJ：能提供ESTP所需的稳定性和关怀，帮助他们放慢生活节奏。</view>
+        <view>ESFJ：社交能力强，能与ESTP共享社交活动，增进彼此的情感联系。</view>
+        <view>INFJ：深思熟虑，能帮助ESTP探索更深层次的情感和意义。</view>
+        <view>ENFP：充满乐趣和创造力，能与ESTP一起享受生活中的冒险和新鲜事物。</view>
       </view>
 
   </view>

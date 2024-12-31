@@ -1,16 +1,16 @@
 <!-- INTJ.wxml -->
-<navigation-bar title="INTP人格" back="{{true}}" ></navigation-bar>
+<navigation-bar title="ISTP人格" back="{{true}}" ></navigation-bar>
   <image src="/subPackages/pages/image/mbti-background.png" class="background-image"></image>
   <scroll-view scroll-y="true" class="scroll-view" scroll-top="{{topNum}}">
     <view hidden="{{!showPersonality}}">
         <text class="title">人格特征</text>
-        <view class="paragraph">INTP，被称为“思想家”，在MBTI个性类型中以其独到的逻辑性和创新性著称。这类人格深受知识和探索未知的驱动，对理解复杂的理论和系统有着天生的能力。INTP喜欢通过逻辑分析和抽象思维来解决问题，常常能够洞察到问题背后的本质。</view>
-        <view class="paragraph">在社交场合，INTP可能显得较为内向和矜持，他们通常不愿意进行浅层次的交流，更喜欢深度的对话。由于他们的思维方式和对个人空间的需要，INTP在大型社交活动中可能不太活跃，但在小圈子中能够提供富有洞见的观点。</view>
-        <view class="paragraph">INTP对个人自由和独立性的需求极高，这使得他们在需要遵循严格规则和程序的工作环境中可能感到束缚。他们适合从事科研、编程、工程设计等领域，这些领域可以让他们发挥其创新思维和问题解决能力。INTP在这些领域可以做到深入且系统地工作，发掘新知识，推动技术或理论的进步。</view>
-        <view class="paragraph">然而，INTP在人际关系和情感表达方面可能遇到挑战。他们往往不擅长识别和表达情感，可能在亲密关系中显得有些脱节。尽管如此，一旦建立了信任关系，INTP可以是忠诚且深思熟虑的伴侣。</view>
-        <view class="paragraph">在思考和决策过程中，INTP倾向于追求完美，可能会在决策时过度分析，寻求所有可能的选项和结果，这有时会导致行动的迟缓。他们需要学会在追求完美和有效行动之间找到平衡。</view>
-        <view class="paragraph">INTP非常重视个人思想的独立性，不喜欢权威对他们思考和行动的干预。在遇到强制性的权威时，他们可能会表现出抵触情绪。因此，INTP在自由度高的工作环境中会更加成功和快乐。</view>
-        <view class="paragraph">尽管INTP在日常活动和例行公事中可能不太投入，但他们对于解决复杂问题和发展新思想充满热情。他们经常沉浸在思考和理论分析中，可以在科学和技术发展中发挥重要作用。</view>
+        <view class="paragraph">ISTP类型的人们对于周围的事物充满了好奇心，喜欢去发现和探究未知的事物。他们渴望用双手和眼睛去触摸、感知和了解各种不同的事物。</view>
+        <view class="paragraph">擅长于将理论知识转化为实际操作，并且善于解决实际问题。ISTP善于将不同的事物结合在一起，创造出新的作品或解决问题的方法</view>
+        <view class="paragraph">善于动手制作各种物品和工具，能够将图纸或设计转化为实际的物品。他们通常精通各种工具和材料，能够熟练地运用它们来制造出所需的作品。</view>
+        <view class="paragraph">偏向于实用主义的性格，他们通常喜欢通过逻辑分析和理性思考来解决实际问题。他们往往比较注重细节和精度，善于运用创造力和独特的眼光来设计和制造各种机械装置。</view>
+       <view class="paragraph">通常能够很快地适应各种不同的环境和情况，即使在面临变化或不熟悉的环境时，他们也能够迅速调整自己的状态和应对方式。在面对压力和挑战时，ISTP通常能够保持情绪稳定和冷静，不被困难和挫折所吓倒，并能够继续做出明智的决策。</view>
+       <view class="paragraph">勇于挑战传统和常规，不愿意被束缚和限制，他们喜欢尝试新的事物和新的方式，不断突破自己的舒适区。ISTP渴望与众不同，他们追求独特性和个性化，不断尝试新的创意和设计，希望自己能够成为潮流的引领者。</view>
+       <view class="paragraph">勇于挑战、敢于冒险、追求独特，同时也具备自信和热情积极的品质，这些特点让他们在人生和事业中都具有很强的竞争力。ISTP通常具有非常独立的思考能力，他们能够从不同的角度和思路考虑问题，而不是盲目跟随大众的观点。</view>
       <view class="last-section">
         <button bindtap="goToAdvantages">工作中的优劣势 →</button>
       </view>
@@ -18,36 +18,40 @@
 
     <view hidden="{{!showAdvantages}}">
       <text class="title">工作中的优劣势</text>
-      <view class="list">
-      <view class="list-item-title">优势</view>
-      <view class="list-item">1、分析能力强：善于逻辑分析和抽象思维，能够深入挖掘问题的根源。</view>
-      <view class="list-item">2、创新思维：经常提出创新的想法和解决方案，不满足于现状。</view>
-      <view class="list-item">3、独立工作能力：能够在少有外界干扰的环境中高效工作。</view>
-      <view class="list-item">4、自我驱动：对感兴趣的项目有很高的动力，可以持续深入研究。</view>
-      <view class="list-item">5、善于理论构建：能够建立和发展复杂的理论体系。</view>
-      <view class="list-item">6、适应性强：在理解新技术和新系统方面表现出色。</view>
-      <view class="list-item-title">劣势</view>
-      <view class="list-item">1、人际交往：可能在表达情感或理解他人情感上有困难。</view>
-      <view class="list-item">2、细节处理：有时候可能会忽视实际细节，过于关注大局。</view>
-      <view class="list-item">3、决策迟疑：倾向于过多分析而难以做出快速决策。</view>
-      <view class="list-item">4、避免权威：可能对形式和权威持反感态度，不喜欢遵守规则。</view>
-      <view class="list-item">5、情绪管理：在压力大的情况下可能难以管理自己的情绪。</view>
-      <view class="list-item">6、过分理想化：有时可能会对现实持有过于理想化的期望。</view>
-    </view>
+        <view class="list-item-title">优势:</view>
+          <view class="list-item">1、解决问题的能力：ISTP擅长逻辑分析和实际操作，能迅速找到问题的根源并解决。</view>
+          <view class="list-item">2、适应性强：能快速适应新环境和新技术，灵活处理各种突发状况。</view>
+          <view class="list-item">3、独立性：在工作中表现出高度的独立性，能够单独完成多种任务。</view>
+          <view class="list-item">4、技术技能：通常对技术有深入的理解，能在技术或工程领域表现出色。</view>
+          <view class="list-item">5、冷静：在压力情况下能保持冷静，做出合理的决策。</view>
+          <view class="list-item">6、实用主义：面对工作问题时，ISTP总是寻求最实际有效的解决方案。</view>
+          <view class="list-item">7、直接有效的沟通：他们通常沟通直接，不拐弯抹角，确保信息准确传达。</view>
+          <view class="list-item">8、快速学习能力：对于新信息和技能的吸收特别迅速，尤其是在实践中学习。</view>
+
+      <view class="list-item-title">劣势:</view>
+        <view class="list-item">1、不善于长期规划：ISTP可能对长远目标的规划不够关注，偏好即兴行动。</view>
+        <view class="list-item">2、人际关系：可能不太重视工作中的人际关系和团队合作，有时显得孤僻。</view>
+        <view class="list-item">3、对规则的抵触：不喜欢遵守传统规则，有时候会忽视标准流程。</view>
+        <view class="list-item">4、情绪表达：可能不太擅长表达自己的感受和情绪，与人沟通时可能显得冷漠。</view>
+        <view class="list-item">5、风险评估：在追求效率和速度时，可能会忽略潜在的风险。</view>
+        <view class="list-item">6、注意力持久性：对不感兴趣的任务可能缺乏持续的注意力。</view>
+        <view class="list-item">7、避免权威：可能对上级或权威的命令有抵触情绪。</view>
+        <view class="list-item">8、不善变通：在需要高度灵活和适应性的环境中，有时可能会显得固执。</view>
+
     <view class="last-section">
       <button bindtap="goToCareers">偏好的职业 →</button>
     </view>
-  </view>
+    </view>
 
   <view hidden="{{!showCareers}}">
     <text class="title">偏好的职业</text>
-      <text class="list-item-title-left">工作领域:</text>
+      <text class="list-item-title">适合的职业:</text>
       <view class="paragraph-box">
-          电脑软件设计师、系统分析人员、计算机程序员、研究开发专业人员、数据库管理、故障排除专家、战略规划师、金融规划师、信息服务开发商、变革管理顾问、企业金融律师、大学教授、科研机构研究人员、数学家、物理学家、经济学家、考古学家、历史学家、证券分析师、金融投资顾问、律师、法律顾问、财务专家、侦探、各类发明家、作家、设计师、音乐家、艺术家。
+        信息服务业经理、计算机程序员、警官、软件开发员、律师助理、消防员、私人侦探、药剂师、证券分析员、银行职员、管理顾问、财务顾问、电子专业人士、技术培训人员、信息服务开发人员、软件开发商、海洋生物学者、后勤与供应经理、经济学者、贸易商、商品经销商、产品代理商（有形产品）、警察、侦探、体育工作者、赛车手、飞行员、雕塑家、手工制作、画家
       </view>
-      <view class="list-item-title-left">工作领域:</view>
+      <view class="list-item-title">工作领域:</view>
       <view class="paragraph-box">
-          计算机技术、理论研究、学术领域、专业领域、创造性领域等。
+        技术领域、证券、金融业、贸易、商业领域、户外、运动、艺术等
       </view>  
     <view class="last-section">
       <button bindtap="goToDevelopment">个性发展建议 →</button>
@@ -56,38 +60,37 @@
 
   <view  hidden="{{!showDevelopment}}">
       <text class="title">个性发展建议</text>
-      <view class="list-item">1.  增强情感表达：学习如何表达和理解情感，以改善人际关系。</view>
-      <view class="list-item">2.  完善人际交往：积极参与社交活动，提高社交技能。</view>
-      <view class="list-item">3.  接受非逻辑因素：承认和理解情感和其他非逻辑因素在决策中的作用。</view>
-      <view class="list-item">4.  细节关注：在注重大局的同时，也要留意实际操作中的细节。</view>
-      <view class="list-item">5.  决策果断：培养在必要时快速做决策的能力。</view>
-      <view class="list-item">6.  管理期望：设定实际可行的目标，以防止过分理想化导致的挫败感。</view>
-      <view class="list-item">7.  培养灵活性：学会在不同情境下灵活应对，适度调整自己的行为和期望。</view>
-      <view class="list-item">8.  时间管理：提高时间管理能力，避免过度沉浸在兴趣领域中。</view>
-      <view class="list-item">9.  寻求反馈：主动寻求他人的反馈，以客观评估自己的行为和成效。</view>
-      <view class="list-item">10. 情绪调节：发展有效的应对策略来管理压力和情绪。</view>
-    <view class="last-section">
+        <view class="list-item">1、培养专注力：通过定时任务和专注训练，提高处理复杂任务的能力。</view>
+        <view class="list-item">2、提高人际交往能力：通过社交活动和团队合作项目增强与人合作和交流的能力。</view>
+        <view class="list-item">3、学习情绪管理：通过情绪管理课程了解自己的情绪并学会表达。</view>
+        <view class="list-item">4、接受和适应变化：培养对变化的适应能力，接受不同的工作方法和流程。</view>
+        <view class="list-item">5、长期规划能力：通过制定个人目标和职业规划提高前瞻性思维。</view>
+        <view class="list-item">6、增强责任感：在团队中承担更多责任，提高自己对团队的贡献。</view>
+        <view class="list-item">7、改善沟通技巧：学习有效沟通技巧，确保与他人的交流更加有效。</view>
+        <view class="list-item">8、培养耐心：通过放慢行动的步调，提高对细节和过程的关注。</view>
+        <view class="list-item">9、学习接受指导：对他人的建议保持开放态度，学习从别人的反馈中得到成长。</view>
+      <view class="last-section">
       <button bindtap="goToLoveAnalysis">爱情分析 →</button>
     </view>
   </view>
-
   <view hidden="{{!showLove}}">
       <text class="title">爱情分析</text>
-      <view class="list-item-title">爱情特征</view>
-      <view class="paragraph-box">
-        <text>INTP 在爱情关系中表现出对伴侣思想深度和智力的高度赏识。他们倾向于与能够在智力上相互激发并且拥有相似世界观的伴侣建立关系。在关系中，INTP 可能不是非常直观地表达情感，但他们通过深入的对话和共享思想来展现对关系的承诺和热情。</text>
+      <view class="list-item-title">爱情特征:</view>
+      <view class="love-box">
+        <text>ISTP在爱情中通常表现为实际和直接，他们喜欢通过行动而非言语来表达爱意。在恋爱关系中，ISTP可能不会频繁表达感情，但会在关键时刻为伴侣提供坚定的支持。他们倾向于维持一定的个人空间，不喜欢关系中的过度黏合。</text>
       </view>
-      <view class="list-item-title">爱情观</view>
-      <view class="paragraph-box">
-        <text>INTP看待爱情关系时，重视精神层面的连接多于物质或表面的吸引。他们寻找能够理解并接受他们复杂内心世界的伴侣，同时也希望伴侣能提供新的见解和思考角度。</text>
+  
+      <view class="list-item-title">爱情观:</view>
+      <view class="love-box">
+        <text>ISTP看待爱情关系时更加实用和现实。他们寻找能够共享自由和探险的伴侣，同时也需要伴侣尊重他们的独立性。ISTP对待关系很真诚，不喜欢游戏和复杂的情感游戏，更倾向于简单、直接的互动。</text>
       </view>
-      <view class="list-item-title">适配的人格</view>
+      <view class="list-item-title">适配的人格:</view>
       <view class="paragraph-box">
-        <view>ENTJ：为INTP提供决策上的确定性和方向性，同时享受理智上的挑战。</view>
-        <view>ENFP：通过其热情和情感深度补充INTP在情感表达上的不足，同时带来创新的视角。</view>
-        <view>INFJ：与INTP在理想和价值观上有深度共鸣，能够在情感和智力上互补。</view>
-        <view>INTJ：两者在逻辑和独立性上高度契合，可以在追求知识和个人成长的道路上相互支持。</view>
-      </view>
+          <view>ESTJ：提供结构和组织，帮助ISTP更好地规划未来。</view>
+          <view>ESFJ：通过情感支持和关怀，平衡ISTP的情感表达。</view>
+          <view>INFP：提供深度情感连接，鼓励ISTP更开放表达自己的情感。</view>
+          <view>ENFP：共享对新奇和冒险的热爱，同时激励ISTP探索新的人际关系动态。</view>
+        </view>
 
   </view>
   </scroll-view>

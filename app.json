@@ -3,7 +3,7 @@
     "pages/index/index",
     "pages/dream/dream-interepet",
     "pages/assessment/assessment",
-    "pages/book/book",
+    "pages/consult/consult",
     "pages/profile/profile"
   ],
   "subPackages": [
@@ -71,7 +71,7 @@
       "selectedIconPath": "/images/tabs/assessment_selected.png"
     },
     {
-      "pagePath": "pages/book/book",
+      "pagePath": "pages/consult/consult",
       "text": "咨询",
       "iconPath": "/images/tabs/book_unselected.png",
       "selectedIconPath": "/images/tabs/book_selected.png"

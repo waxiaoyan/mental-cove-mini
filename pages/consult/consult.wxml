@@ -1,0 +1,2 @@
+<!--pages/dream/dream-interepet.wxml-->
+<navigation-bar title="预约" back="{{false}}" color="black" background="#B5EAD7"></navigation-bar>

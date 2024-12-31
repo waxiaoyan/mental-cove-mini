@@ -1,2 +1,2 @@
-<!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<!--pages/dream/dream-interepet.wxml-->
+<navigation-bar title="个人" back="{{false}}" color="black" background="#B5EAD7"></navigation-bar>

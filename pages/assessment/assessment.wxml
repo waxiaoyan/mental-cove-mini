@@ -8,7 +8,6 @@
           <text class="title">MBTI职业性格测试</text>
           <text class="subTitle">经典93题版测试</text>
           <view class="buttons">
-          <!-- <text class="subTitle">200人测试过</text> -->
             <button class="share-button assess" bindtap="mbtiQuestionnaire">测试</button> 
             <button class="share-button share" bindtap="onShare">
               <image src="/images/share_button.png" class="icon"/>分享

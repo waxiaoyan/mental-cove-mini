@@ -7,14 +7,13 @@
   z-index: -1;
 }
 .paragraph {
-  margin-bottom: 30rpx; /* 段落之间的下边距 */
   line-height: 1.6; /* 行高 */
-  font-size: 32rpx; /* 字体大小 */
+  font-size: 30rpx; /* 字体大小 */
   color: rgb(66, 66, 66); /* 字体颜色 */
   display:flex;
   flex-wrap: wrap;
   white-space: pre-wrap;
-  padding: 20rpx 20rpx;
+  padding: 10rpx 10rpx;
   margin: 0rpx 10rpx;
 }
 
@@ -43,18 +42,19 @@ page {
   font-size: 36rpx; /* 字体大小 */
   font-weight: bold; /* 加粗字体 */
   margin-bottom: 20rpx; /* 标题与内容之间的间距 */
-  margin-top: 20rpx;
+  margin-top: 30rpx;
 }
 
 /* 模拟列表项的样式 */
 .list-item {
-  padding: 16rpx 30rpx; /* 统一左右内边距 */
+  padding: 15rpx 20rpx; /* 统一左右内边距 */
   margin-left: 0; /* 确保没有左边距 */
   font-size: 32rpx; /* 字体大小 */
   text-align: left; /* 文本对齐方式 */
   line-height: 1.2; /* 行高增加可读性 */
   color: rgb(70, 69, 69); /* 字体颜色，深灰色 */
 }
+
 .list-item-title {
   color: rgb(80, 79, 79);
   font-size: 34rpx;

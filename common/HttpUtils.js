@@ -7,7 +7,6 @@ function apiRequest(url, method, data, callback) {
     });
     return; 
   }
-
   wx.request({
     url: url,
     method: method,

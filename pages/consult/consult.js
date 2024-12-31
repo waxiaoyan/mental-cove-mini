@@ -1,4 +1,4 @@
-// pages/book/book.js
+// pages/consult/consult.js
 Page({
 
   /**

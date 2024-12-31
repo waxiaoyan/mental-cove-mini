@@ -74,11 +74,11 @@
   <view hidden="{{!showLove}}">
       <text class="title">爱情分析</text>
       <view class="list-item-title">爱情特征</view>
-      <view class="paragraph-box">
+      <view class="love-box">
         <text>INTP 在爱情关系中表现出对伴侣思想深度和智力的高度赏识。他们倾向于与能够在智力上相互激发并且拥有相似世界观的伴侣建立关系。在关系中，INTP 可能不是非常直观地表达情感，但他们通过深入的对话和共享思想来展现对关系的承诺和热情。</text>
       </view>
       <view class="list-item-title">爱情观</view>
-      <view class="paragraph-box">
+      <view class="love-box">
         <text>INTP看待爱情关系时，重视精神层面的连接多于物质或表面的吸引。他们寻找能够理解并接受他们复杂内心世界的伴侣，同时也希望伴侣能提供新的见解和思考角度。</text>
       </view>
       <view class="list-item-title">适配的人格</view>

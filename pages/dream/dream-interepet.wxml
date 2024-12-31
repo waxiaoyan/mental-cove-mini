@@ -1,2 +1,2 @@
 <!--pages/dream/dream-interepet.wxml-->
-<text>pages/dream/dream-interepet.wxml</text>
+<navigation-bar title="释梦" back="{{false}}" color="black" background="#B5EAD7"></navigation-bar>
