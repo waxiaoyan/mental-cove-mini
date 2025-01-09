@@ -13,6 +13,7 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad(options) {
+    wx.hideShareMenu();
     if (!app.isLoggedIn()) {
       this.showLoginModal();
     }
@@ -88,6 +89,24 @@ Page({
    * Called when user click on the top right corner to share
    */
   onShareAppMessage() {
-
+    return {
+      title: '心理测评 - MBTI职业性格测试',
+      path: '/pages/assessment/assessment', // 分享的路径
+      imageUrl: '/pages/assessment/image/16personalities.png', // 分享的图片
+      success: function (res) {
+        wx.showToast({
+          title: '分享成功',
+          icon: 'success',
+          duration: 2000
+        });
+      },
+      fail: function (res) {
+        wx.showToast({
+          title: '分享失败',
+          icon: 'none',
+          duration: 2000
+        });
+      }
+    };
   }
 })

@@ -68,6 +68,11 @@ Page({
             }
         });
   },
+  reassessment(){
+     wx.switchTab({
+            url: '/pages/assessment/assessment'
+     });
+  },
 
   /**
    * Lifecycle function--Called when page is initially rendered
@@ -115,6 +120,6 @@ Page({
    * Called when user click on the top right corner to share
    */
   onShareAppMessage() {
-
+  
   }
 })

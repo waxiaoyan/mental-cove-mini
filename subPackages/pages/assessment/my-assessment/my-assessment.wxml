@@ -8,10 +8,7 @@
           <text class="title">{{item.assessmentDesc}}</text>
           <text class="subTitle">测评日期：{{item.assessmentTime}}</text>
           <view class="buttons">
-            <button class="share-button assess" bindtap="reassessment">重新测评</button> 
-            <button class="share-button share" bindtap="onShare">
-              <image src="/images/share_button.png" class="icon"/>分享
-            </button>
+            <button class="share-button" bindtap="reassessment">重新测评</button> 
           </view>
         </view>
       </view>

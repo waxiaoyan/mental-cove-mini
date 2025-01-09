@@ -8,7 +8,7 @@
           <text class="subTitle">经典93题版测试</text>
           <view class="buttons">
             <button class="share-button assess" bindtap="mbtiQuestionnaire">测试</button> 
-            <button class="share-button share" bindtap="onShare">
+            <button open-type="share" class="share-button share">
               <image src="/images/share_button.png" class="icon"/>分享
             </button>
           </view>
