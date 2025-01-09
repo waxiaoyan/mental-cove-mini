@@ -1,1 +1,63 @@
-/* pages/profile/profile.wxss */
+
+.user-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding:40rpx;
+  border-bottom: 1px solid #ccc; /* 添加底部边框 */
+}
+
+.avatar {
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 40rpx;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.username, .userid {
+  font-size: 32rpx;
+  color: #333;
+}
+
+.menu {
+  width: 100%;
+  padding: 20rpx 40rpx;
+}
+
+.button {
+  background-color: #c8f0e1; /* Very light grey background */
+  padding: 20rpx 0; /* Vertical padding increased, horizontal removed */
+  border-radius: 20rpx; /* Slightly less rounded corners */
+  border: 1rpx solid #ddd; /* Subtle border for more definition */
+  font-size: 32rpx; /* Font size for readability */
+  box-shadow: 0 2rpx 2rpx rgba(0, 0, 0, 0.1); /* Adds depth with a subtle shadow */
+  margin-top: 100rpx;
+}
+
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15rpx 0;
+  border-bottom: 2rpx solid #eee;
+  width: 100%;
+}
+
+.menu-icon-right {
+  position: absolute; /* 设置绝对定位 */
+  right: 0; /* 将图标放置在最右侧 */
+  transform: translateY(-5%); /* 确保垂直居中 */
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.menu-icon {
+  width: 30rpx;
+  height: 50rpx;
+  margin-right: 12rpx;
+}

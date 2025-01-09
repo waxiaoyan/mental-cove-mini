@@ -1,0 +1,25 @@
+<navigation-bar title="测评记录" back="{{true}}" color="black" background="#B5EAD7"></navigation-bar>
+  <view class="assessment-container">
+  <block wx:for="{{assessmentResults}}" wx:key="unique">
+    <view class="assessment-item">
+      <view class="content">
+        <image src="/pages/assessment/image/16personalities.png" mode="aspectFill" class="profile-pic"/>
+        <view class="text-block">
+          <text class="title">{{item.assessmentDesc}}</text>
+          <text class="subTitle">测评日期：{{item.assessmentTime}}</text>
+          <view class="buttons">
+            <button class="share-button assess" bindtap="reassessment">重新测评</button> 
+            <button class="share-button share" bindtap="onShare">
+              <image src="/images/share_button.png" class="icon"/>分享
+            </button>
+          </view>
+        </view>
+      </view>
+    </view>
+    </block>
+      <view class="no-records-container" wx:if="{{!assessmentResults.length}}">
+        <image src="../../image/assessment_icon.svg" class="no-records-image"></image>
+        <text class="no-records-text">现在还没有测评结果，\n去挑选你喜欢的测评吧~</text>
+        <button class="no-records-button" bindtap="goToAssessment">前往测评</button>
+    </view>
+  </view>

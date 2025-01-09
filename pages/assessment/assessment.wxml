@@ -1,5 +1,4 @@
 <navigation-bar title="心理测评" back="{{false}}" color="black" background="#B5EAD7"></navigation-bar>
-<scroll-view class="scrollarea" scroll-y type="list">
   <view class="assessment-container">
     <view class="assessment-item">
       <view class="content">
@@ -16,5 +15,5 @@
         </view>
       </view>
     </view>
+    <login-modal wx:if="{{showLoginModal}}" bind:change="handleLoginModalChange"/>
   </view>
-</scroll-view>

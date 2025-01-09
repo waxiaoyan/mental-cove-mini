@@ -9,27 +9,27 @@
   "subPackages": [
     {
       "name": "pages",
-      "root": "subPackages",
+      "root": "subPackages/pages/",
       "pages": [
-        "pages/assessment/mbti-questionnaire/mbti-questionnaire",
-        "pages/assessment/mbti-result/mbti-result",
-        "pages/assessment/mbti-result-interpretation/mbti-intj/mbti-intj",
-        "pages/assessment/mbti-result-interpretation/mbti-entp/mbti-entp",
-        "pages/assessment/mbti-result-interpretation/mbti-intp/mbti-intp",
-        "pages/assessment/mbti-result-interpretation/mbti-entj/mbti-entj",
-        "pages/assessment/mbti-result-interpretation/mbti-infj/mbti-infj",
-        "pages/assessment/mbti-result-interpretation/mbti-infp/mbti-infp",
-        "pages/assessment/mbti-result-interpretation/mbti-enfj/mbti-enfj",
-        "pages/assessment/mbti-result-interpretation/mbti-enfp/mbti-enfp",
-        "pages/assessment/mbti-result-interpretation/mbti-istj/mbti-istj",
-        "pages/assessment/mbti-result-interpretation/mbti-isfj/mbti-isfj",
-        "pages/assessment/mbti-result-interpretation/mbti-estj/mbti-estj",
-        "pages/assessment/mbti-result-interpretation/mbti-esfj/mbti-esfj",
-        "pages/assessment/mbti-result-interpretation/mbti-istp/mbti-istp",
-        "pages/assessment/mbti-result-interpretation/mbti-isfp/mbti-isfp",
-        "pages/assessment/mbti-result-interpretation/mbti-estp/mbti-estp",
-        "pages/assessment/mbti-result-interpretation/mbti-esfp/mbti-esfp"
-        
+        "assessment/mbti-questionnaire/mbti-questionnaire",
+        "assessment/mbti-result/mbti-result",
+        "assessment/mbti-result-interpretation/mbti-intj/mbti-intj",
+        "assessment/mbti-result-interpretation/mbti-entp/mbti-entp",
+        "assessment/mbti-result-interpretation/mbti-intp/mbti-intp",
+        "assessment/mbti-result-interpretation/mbti-entj/mbti-entj",
+        "assessment/mbti-result-interpretation/mbti-infj/mbti-infj",
+        "assessment/mbti-result-interpretation/mbti-infp/mbti-infp",
+        "assessment/mbti-result-interpretation/mbti-enfj/mbti-enfj",
+        "assessment/mbti-result-interpretation/mbti-enfp/mbti-enfp",
+        "assessment/mbti-result-interpretation/mbti-istj/mbti-istj",
+        "assessment/mbti-result-interpretation/mbti-isfj/mbti-isfj",
+        "assessment/mbti-result-interpretation/mbti-estj/mbti-estj",
+        "assessment/mbti-result-interpretation/mbti-esfj/mbti-esfj",
+        "assessment/mbti-result-interpretation/mbti-istp/mbti-istp",
+        "assessment/mbti-result-interpretation/mbti-isfp/mbti-isfp",
+        "assessment/mbti-result-interpretation/mbti-estp/mbti-estp",
+        "assessment/mbti-result-interpretation/mbti-esfp/mbti-esfp",
+        "assessment/my-assessment/my-assessment"
       ]
     }
   ],

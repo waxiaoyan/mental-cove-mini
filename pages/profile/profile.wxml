@@ -1,2 +1,33 @@
 <!--pages/dream/dream-interepet.wxml-->
-<navigation-bar title="个人" back="{{false}}" color="black" background="#B5EAD7"></navigation-bar>
+<navigation-bar title="个人中心" back="{{false}}" color="black" background="#B5EAD7"></navigation-bar>
+<view class="profile-container">
+    <view class="user-info" >
+        <image class="avatar" src="../../images/icon/profile.svg" mode="aspectFill"></image>
+        <view class="user-details">
+            <text class="nickname">{{userInfo.userName}}</text>
+            <text class="userid">ID: {{userInfo.userId}}</text>
+        </view>
+    </view>
+
+    <view class="menu">
+        <view class="menu-item" bindtap="navigateToSettings">
+           <view style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+             <view style="display: flex; align-items: center; flex-grow: 1;">
+              <image src="../../images/icon/bind_phone.svg" mode="aspectFill" class="menu-icon"></image>
+              <text>绑定手机号</text> <image src="../../images/icon/right_click.svg" mode="aspectFill" class="menu-icon-right"></image>
+            </view>
+            </view>
+        </view>
+        <view class="menu-item" bindtap="navigateToMyAssessment">
+            <view style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+                <view style="display: flex; align-items: center; flex-grow: 1;">
+                    <image src="../../images/icon/assessment_result.svg" mode="aspectFill" class="menu-icon"></image>
+                    <text>我的测评</text>        
+                    <image src="../../images/icon/right_click.svg" mode="aspectFill" class="menu-icon-right"></image>
+                </view>
+            </view>
+        </view>
+      </view>
+    <button class="button" bindtap="logout" wx:if="{{isLoggedIn}}">退出登录</button>
+    <login-modal wx:if="{{showLoginModal}}" bind:change="handleLoginModalChange"/>
+    </view>

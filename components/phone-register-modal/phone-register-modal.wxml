@@ -1,0 +1,12 @@
+<view wx:if="{{showModal}}" class="modal">
+  <view class="modal-content">
+    <image src="../../images/icon/icon-close.svg" class="close-icon" bindtap="close"/>
+    <view class="modal-header">手机号绑定</view>
+    <view class="modal-body">
+      <input type="number" placeholder="请输入手机号" bindinput="inputChange" />
+    </view>
+    <view class="modal-footer">
+      <button bindtap="submit">注册</button>
+    </view>
+  </view>
+</view>

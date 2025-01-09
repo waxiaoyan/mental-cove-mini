@@ -1,35 +1,45 @@
 // app.js
 import {Store} from './common/Storage'
 import {KEY_TOKEN} from './common/Constants'
+import {envConfig} from './common/conf/EnvConfig'
+
 App({
+  config: {
+    env: envConfig,
+  },
   onLaunch: function() {
-      // 应用启动时调用登录
-      // this.userLogin();
+
   },
   globalData: {
       userInfo: {}
   },
   isLoggedIn() {
-    return Store.getItem(KEY_TOKEN);
+    const token = Store.getItem(KEY_TOKEN);
+    const userInfoExists = this.globalData.userInfo && Object.keys(this.globalData.userInfo).length > 0;
+    return !!token && userInfoExists;
+  },
+  setUserInfo: function(userInfo) {
+    this.globalData.userInfo = userInfo;
   },
   userLogin: function() {
       return new Promise((resolve, reject) => {
-        if(this.globalData.userInfo)
+        if(!this.isLoggedIn())
           wx.login({
               success: res => {
                   if (res.code) {
-                    let code = res.code;
                       wx.request({
-                          url: 'http://localhost:8000/mental-cove/api/login', 
+                          url: `${this.config.env.API_LOCAL}`+'/login', 
                           method: 'POST',
                           data: {
                               code: res.code
                           },
                           success: res => {
                               if (res.statusCode === 200) {
-                                  Store.setItem(KEY_TOKEN, res.data);
-                                  resolve('登录成功')
-                              } else {
+                                  Store.setItem(KEY_TOKEN, res.data.token);
+                                  this.globalData.userInfo.userId = res.data.userId;
+                                  this.globalData.userInfo.userName = res.data.userName;
+                                  resolve(this.globalData.userInfo);
+                                } else {
                                   reject('登录失败：' + res.errMsg);
                               }
                           },
