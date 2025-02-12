@@ -1,6 +1,7 @@
 // subPackages/pages/assessment/my-assessment/my-assessment.js
 import {Store} from '../../../../common/Storage'
 import {KEY_TOKEN} from '../../../../common/Constants'
+const HttpUtils = require('../../../../common/HttpUtils.js'); 
 
 const app = getApp();
 
@@ -22,55 +23,34 @@ Page({
   fetchAssessmentResults: function() {
     const that = this;
     const userId = app.globalData.userInfo.userId
-    const token = Store.getItem(KEY_TOKEN); // 从本地存储获取token
-    if (!token) {
-        wx.showToast({
-            title: '未登录或登录已过期',
-            icon: 'none'
-        });
-        return;
-    }
-    wx.request({
-      url:`${app.config.env.API_LOCAL}` +  '/questionnaires/assessment-results?userId=' + userId, 
-      method: 'GET',
-      header: {
-        'Authorization': `Bearer ${token}` 
-      },
-      success: function(res) {
-        if (res.statusCode === 200) {
-          that.setData({
-            assessmentResults: res.data
-          });
-        } else {
-          wx.showToast({
-            title: '获取数据失败',
-            icon: 'none'
-          });
+    const url = `${app.config.env.API_HOST}/questionnaires/assessment-results?userId=${userId}`;
+    HttpUtils.apiRequest(
+        url, 
+        'GET', 
+        null, 
+        (res) => { 
+          if (res.statusCode === 200) {
+            that.setData({
+              assessmentResults: res.data
+            });
+          } else {
+            wx.showToast({
+              title: '获取数据失败',
+              icon: 'none'
+            });
+          }
         }
-      },
-      fail: function() {
-        wx.showToast({
-          title: '请求失败',
-          icon: 'none'
-        });
-      }
-    });
+      );
   },
 
   goToAssessment() {
      wx.switchTab({
-            url: '/pages/assessment/assessment',
-             success: function() {
-              console.log("Navigation successful");
-            },
-            fail: function(error) {
-              console.log("Navigation failed", error);
-            }
+            url: '/pages/assessment/assessment'
         });
   },
-  reassessment(){
-     wx.switchTab({
-            url: '/pages/assessment/assessment'
+  assessmentResult(){
+     wx.navigateTo({
+            url: '/subPackages/pages/assessment/mbti-result/mbti-result?results=' + encodeURIComponent(JSON.stringify(this.data.assessmentResults))
      });
   },
 

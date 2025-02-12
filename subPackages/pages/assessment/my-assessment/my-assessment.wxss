@@ -38,19 +38,25 @@
   color: #666;
   margin-bottom: 20rpx; /* Space before buttons */
 }
-
 .buttons {
   display: flex;
   justify-content: space-between;
-  margin-top: 10rpx; /* Space from the text above */
+  gap: 20rpx; /* Space between buttons */
+  margin-top: 5rpx; /* Space above buttons */
 }
 
-.share-button {
-  background-color: #c8f0e1;
+.assessment-button {
+  background-color: #c8f0e1; /* Button background color */
   border-radius: 20rpx; /* Rounded corners */
-  padding: 20rpx; /* Reduced padding */
-  font-size: 30rpx; /* Slightly smaller text */
+  padding: 20rpx 0; /* Adjust button height */
+  font-size: 30rpx; /* Font size */
+  width: 45%; /* Limit button width to fit better */
+  max-width: 200rpx; /* Maximum width to prevent stretching */
+  text-align: center; /* Center text */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden;
 }
+
 
 .icon {
   width: 40rpx; /* Adjust icon size */

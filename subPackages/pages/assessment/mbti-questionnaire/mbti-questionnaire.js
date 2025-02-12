@@ -29,6 +29,10 @@ Page({
       answers: { ...this.data.answers, [currentId]: selected },
       selected:true
     });
+    let newIndex = this.data.currentIndex + 1;
+    if (newIndex <= this.data.totalQuestions) {
+       this.nextQuestion();
+    }
   },
 
   nextQuestion: function() {
@@ -102,15 +106,11 @@ Page({
       return; // Stop the function from proceeding
     }
     const url = app.config.env.API_HOST + '/questionnaires/submit-mbti';
-    wx.request({
-        method: 'POST',
-        url: url,
-        header: {
-            'Content-Type': 'application/json',
-            'Authorization': "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhY2Nlc3NfdG9rZW4iOiJiYTU3YzNiYi0wNDgwLTQzMTYtOTBmMC04YjA1YWIzYjQzOTciLCJzdWIiOiJmNWFjMzI0MC04ZTczLTQ5YjQtOGNmZC1lMGRmODdjOWM1MjEiLCJpYXQiOjE3MzA0Mzc4NTQsImV4cCI6MTgwMjQzNzg1NH0.WD2Gu5ghFFYcYYkbgdmBHGhZC8joBxGOsD1qmyoTVsw"
-        },
-        data: this.data.answers,
-        success: (res) => {
+    HttpUtils.apiRequest(
+      url, 
+      'POST', 
+      this.data.answers, 
+      (res) => {
             if (res.statusCode === 200) {
                 // Process the successful response and navigate
                 wx.showToast({
@@ -132,17 +132,8 @@ Page({
                     duration: 2000
                 });
             }
-        },
-        fail: (err) => {
-            // Handle network errors or server unreachable issues
-            wx.showToast({
-                title: '网络错误或服务器无响应',
-                icon: 'none',
-                duration: 2000
-            });
-            console.error("请求失败:", err);
         }
-    });
+    ); 
 },
   /**
    * Lifecycle function--Called when page is initially rendered

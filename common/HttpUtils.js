@@ -10,7 +10,7 @@ function apiRequest(url, method, data, callback) {
     });
     return; 
   }
-  wx.showLoading({ title: '加载中...', mask: true }); // 显示加载提示
+  wx.showLoading({ title: '加载中...', mask: true }); 
   wx.request({
     url: url,
     method: method,
@@ -20,7 +20,7 @@ function apiRequest(url, method, data, callback) {
       'Authorization': `Bearer ${token}` 
     },
     success: (res) => {
-      wx.hideLoading(); // 隐藏加载提示
+      wx.hideLoading(); 
       if (res.statusCode === 200) {
         callback(res); // 成功回调
       } else {

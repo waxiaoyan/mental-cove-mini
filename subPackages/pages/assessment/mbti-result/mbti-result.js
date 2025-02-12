@@ -8,9 +8,6 @@ Page({
     mbtiType:'',
     personality : '',
     desc: '',
-    field: '',
-    occupations: [],
-    trait:[],
     percentages: [],
     progressColors:['#3c3ff0da','#20ca4b','#ed7d31','#5ea4f5','#a5a4a4']
   },
@@ -28,15 +25,11 @@ Page({
       try {
         const results = JSON.parse(decodeURIComponent(options.results));
         this.setData({
-          mbtiType: results.type,
-          personality: results.personality,
+          mbtiType: results.type || results[0].assessmentResult.type,
+          personality: results.personality || results[0].assessmentResult.personality,
           desc: results.desc,
-          field: results.field,
-          occupations: results.occupations,
-          trait: results.trait,
-          percentages: results.percentages
+          percentages: results.percentages || results[0].assessmentResult.percentages
         });
-        console.log("results:" + results.percentages)
       } catch (e) {
         console.error('解析结果发生错误:', e);
         wx.showToast({
