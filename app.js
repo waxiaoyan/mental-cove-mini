@@ -28,7 +28,7 @@ App({
               success: res => {
                   if (res.code) {
                       wx.request({
-                          url: `${this.config.env.API_LOCAL}`+'/login', 
+                          url: `${this.config.env.API_HOST}`+'/login', 
                           method: 'POST',
                           data: {
                               code: res.code

@@ -1,3 +1,5 @@
+const HttpUtils = require('../../../../common/HttpUtils.js'); 
+const app = getApp();
 Page({
 
   /**
@@ -55,14 +57,14 @@ Page({
   },
   
   updateQuestion: function(index) {
-    const newQuestion = this.data.questions[index - 1]; // 假设 `questions` 是一个包含所有问题的数组
-    const selectedOption = this.data.answers[newQuestion.id] || ''; // 获取已保存的答案，如果没有则为空字符串
+    const newQuestion = this.data.questions[index - 1]; 
+    const selectedOption = this.data.answers[newQuestion.id] || ''; 
     this.setData({
       currentQuestion: newQuestion,
       currentIndex: index,
-      selectedOption: selectedOption // 更新选中的选项
+      selectedOption: selectedOption 
     });
-    this.updateProgress(); // 更新进度
+    this.updateProgress(); 
   },
   
   updateProgress: function() {
@@ -73,20 +75,20 @@ Page({
   },
 
   getQuestions: function() {
-    const url = 'http://localhost:8000/mental-cove/api/questionnaires/mbti';
-    wx.request({
-      url: url,
-      method: 'GET',
-      header: {'Authorization': "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhY2Nlc3NfdG9rZW4iOiJiYTU3YzNiYi0wNDgwLTQzMTYtOTBmMC04YjA1YWIzYjQzOTciLCJzdWIiOiJmNWFjMzI0MC04ZTczLTQ5YjQtOGNmZC1lMGRmODdjOWM1MjEiLCJpYXQiOjE3MzA0Mzc4NTQsImV4cCI6MTgwMjQzNzg1NH0.WD2Gu5ghFFYcYYkbgdmBHGhZC8joBxGOsD1qmyoTVsw"},
-      success: (res) => {
+    const url = app.config.env.API_HOST + '/questionnaires/mbti';
+    HttpUtils.apiRequest(
+      url, // 请求 URL
+      'GET', // 请求方法
+      null, // 请求数据（GET 请求通常不需要 data）
+      (res) => { // 成功回调函数
         this.setData({
           questions: res.data.questions,
           currentQuestion: res.data.questions[0],
           progress: 0,
-          totalQuestions:res.data.questions.length
+          totalQuestions: res.data.questions.length
         });
       }
-    });
+    ); 
   },
 
   submit: function() {
@@ -99,7 +101,7 @@ Page({
       });
       return; // Stop the function from proceeding
     }
-    const url = 'http://localhost:8000/mental-cove/api/questionnaires/submit-mbti';
+    const url = app.config.env.API_HOST + '/questionnaires/submit-mbti';
     wx.request({
         method: 'POST',
         url: url,

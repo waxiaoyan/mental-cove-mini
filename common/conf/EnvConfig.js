@@ -1,5 +1,5 @@
 const envConfig = {
-  API_LOCAL: 'http://localhost:8000/mental-cove/api'
+  API_HOST: 'http://localhost:8000/mental-cove/api'
 }
 
 module.exports = {

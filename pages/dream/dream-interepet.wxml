@@ -1,2 +1,27 @@
 <!--pages/dream/dream-interepet.wxml-->
 <navigation-bar title="释梦" back="{{false}}" color="black" background="#B5EAD7"></navigation-bar>
+<view class="container">
+
+  <!-- 梦境输入区 -->
+  <view class="input-section">
+    <text class="section-title">请输入你的梦境<text class="tip">(每天仅可解析一次梦境)</text>
+</text>
+    <textarea
+      class="dream-input"
+      maxlength="500"
+      bindinput="onInput"
+    ></textarea>
+    <button class="submit-btn" bindtap="analyzeDream" disabled="{{isAnalyzed}}">
+      {{isAnalyzed ? '今日已解析' : '解析梦境'}}
+    </button>
+  </view>
+
+  <view class="result-section">
+    <view >
+    梦境解析结果:
+      
+    </view>
+  </view>
+  <login-modal wx:if="{{showLoginModal}}" bind:change="handleLoginModalChange"/>
+
+</view>

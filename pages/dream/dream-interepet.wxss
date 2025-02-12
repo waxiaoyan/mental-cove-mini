@@ -1,1 +1,68 @@
-/* pages/dream/dream-interepet.wxss */
+/* 页面容器 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32rpx;
+  background-color: #f5f5f5;
+}
+
+.title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 梦境输入区 */
+.input-section {
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+
+.section-title {
+  font-size: 32rpx;
+  margin-bottom: 10rpx;
+  display: block;
+}
+
+.dream-input {
+  width: 100%;
+  height: 400rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  border: 1rpx solid #ddd;
+  margin-bottom: 40rpx;
+  background-color: #fff;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #61daad;
+  color: #fff;
+  border-radius: 16rpx;
+  margin-bottom: 10rpx;
+}
+
+.submit-btn[disabled] {
+  background-color: #ccc;
+}
+
+.tip {
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+}
+
+/* 梦境解析区 */
+.result-section {
+  width: 100%;
+}
+
+.result-content {
+  width: 100%;
+  background-color: #fff;
+  padding: 30rpx;
+  border-radius: 16rpx;
+  margin-bottom: 20rpx;
+}
+

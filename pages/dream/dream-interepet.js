@@ -1,18 +1,24 @@
 // pages/dream/dream-interepet.js
-Page({
+const app = getApp();
 
+Page({
   /**
    * Page initial data
    */
   data: {
-
+    showLoginModal: false,
+    isAnalyzed:false
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad(options) {
-
+    wx.hideShareMenu();
+    if (!app.isLoggedIn()) {
+      this.showLoginModal();
+    }
+    
   },
 
   /**
@@ -25,10 +31,24 @@ Page({
   /**
    * Lifecycle function--Called when page show
    */
-  onShow() {
-
+  showLoginModal() {
+    wx.hideTabBar({
+      animation: false, // 是否需要动画效果
+      success: function() {
+        // 成功隐藏后，可以设置状态显示登录模态框
+        this.setData({ showLoginModal: true });
+      }.bind(this)
+    });
   },
-
+  /**
+   * Lifecycle function--Called when page show
+   */
+  onShow() {
+    if (!app.isLoggedIn()) {
+      // 显示登录模态框时隐藏 tabBar
+      this.showLoginModal();
+    }
+  },
   /**
    * Lifecycle function--Called when page hide
    */
