@@ -30,12 +30,16 @@ Component({
     });    
     },
     closeModal(userInfo) {
+      if (!userInfo || typeof userInfo !== 'object' || userInfo.type === "tap") {
+        console.log("closeModal was triggered by an event.");
+        userInfo = {}; // 如果是事件调用，则将 userInfo 设为空对象
+      }
       wx.showTabBar({
         animation: false,
         success: function() {
-          // 成功显示后，可以设置状态隐藏登录模态框
+          const isLoggedIn = userInfo && Object.keys(userInfo).length > 0;
           this.setData({ showLoginModal: false }, () => {
-            this.triggerEvent('change', { userInfo: userInfo, isLoggedIn: true,showLoginModal: false });
+            this.triggerEvent('change', { userInfo: userInfo, isLoggedIn: isLoggedIn,showLoginModal: false });
           });
         }.bind(this)
       });

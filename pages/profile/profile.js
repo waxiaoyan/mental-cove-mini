@@ -40,10 +40,12 @@ handleLoginModalChange(e) {
     app.setUserInfo(e.detail.userInfo);  // 更新全局用户信息
     this.setData({
       userInfo: e.detail.userInfo,
-      isLoggedIn: true,
-      showLoginModal: false
+      isLoggedIn: true
     });
   }
+  this.setData({
+    showLoginModal: e.detail.showLoginModal
+  });
 },
   /**
    * Lifecycle function--Called when page load

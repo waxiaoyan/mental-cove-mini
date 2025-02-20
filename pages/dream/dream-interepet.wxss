@@ -27,11 +27,11 @@
 
 .dream-input {
   width: 100%;
-  height: 400rpx;
-  padding-left: 10rpx;
+  height: 350rpx;
   padding-right: 10rpx;
   border: 1rpx solid #ddd;
   margin-bottom: 40rpx;
+  margin-top: 20rpx;
   background-color: #fff;
 }
 
@@ -53,16 +53,22 @@
   text-align: center;
 }
 
-/* 梦境解析区 */
 .result-section {
   width: 100%;
 }
 
-.result-content {
-  width: 100%;
-  background-color: #fff;
-  padding: 30rpx;
-  border-radius: 16rpx;
+.result-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
   margin-bottom: 20rpx;
 }
 
+.result-content {
+  max-height: 600rpx;
+  font-size: 32rpx;
+  color: #555;
+  line-height: 1.6;
+  overflow-y: auto;
+  background-color:white;
+}
