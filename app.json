@@ -29,7 +29,10 @@
         "assessment/mbti-result-interpretation/mbti-isfp/mbti-isfp",
         "assessment/mbti-result-interpretation/mbti-estp/mbti-estp",
         "assessment/mbti-result-interpretation/mbti-esfp/mbti-esfp",
-        "assessment/my-assessment/my-assessment"
+        "assessment/my-assessment/my-assessment",
+        "assessment/sds-questionnaire/sds-questionnaire",
+        "assessment/sds-result/sds-result"
+
       ]
     }
   ],

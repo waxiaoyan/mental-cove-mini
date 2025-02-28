@@ -1,1 +1,47 @@
-/* pages/consult/consult.wxss */
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Ensures proper stacking context */
+  overflow: hidden; /* Ensures no overflow from child elements */
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  background-color: transparent; /* Allows background image visibility */
+  color: #333;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  background-color: transparent; /* Allows background image visibility */
+}
+
+.contact {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent; /* Allows background image visibility */
+}
+
+.contact image {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #4CAF50;
+  font-weight: bold;
+}

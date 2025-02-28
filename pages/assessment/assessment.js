@@ -27,6 +27,16 @@ Page({
       this.showLoginModal();
     }
   },
+
+  sdsQuestionnaire: function() {
+    if (app.isLoggedIn()) {
+      wx.navigateTo({
+        url: '/subPackages/pages/assessment/sds-questionnaire/sds-questionnaire'
+      });
+    }else {
+      this.showLoginModal();
+    }
+  },
   handleLoginModalChange(e) {
     this.setData({
       showLoginModal: e.detail.showLoginModal

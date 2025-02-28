@@ -25,7 +25,7 @@ Page({
       try {
         const results = JSON.parse(decodeURIComponent(options.results));
         this.setData({
-          mbtiType: results.type || results[0].assessmentResult.type,
+          mbtiType: results.mbtiType || results[0].assessmentResult.mbtiType,
           personality: results.personality || results[0].assessmentResult.personality,
           desc: results.desc,
           percentages: results.percentages || results[0].assessmentResult.percentages

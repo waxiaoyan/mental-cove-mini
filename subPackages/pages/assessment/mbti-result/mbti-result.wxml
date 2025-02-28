@@ -1,9 +1,9 @@
-<navigation-bar  title="{{type}}人格解析" bind:tap="backToAccessment" back="{{true}}" ></navigation-bar>
+<navigation-bar  title="{{type}}人格解析" bind:tap="backToAccessment" back="{{false}}" ></navigation-bar>
 <image src="/subPackages/pages/image/mbti-background.png" class="background-image"></image>
 <view class="header-container">
     <view class="header-line"><text class="main-header">你的人格类型是：</text></view>
     <view class="header-line"><text class="personality-type">{{personality}}</text></view>
-    <view class="header-line"><text class="type">{{type}}</text></view>
+    <view class="header-line"><text class="type">{{mbtiType}}</text></view>
 </view>
 <view class="progress-container">
     <view class="progress-item" wx:for="{{percentages}}" wx:key="{{index}}">

@@ -2,6 +2,21 @@
   <view class="assessment-container">
     <view class="assessment-item">
       <view class="content">
+        <image src="/pages/assessment/image/sds.jpg" mode="aspectFill" class="profile-pic"/>
+        <view class="text-block">
+          <text class="title">抑郁自评量表SDS</text>
+          <text class="subTitle">共20题</text>
+          <view class="buttons">
+            <button class="share-button assess" bindtap="sdsQuestionnaire">测试</button> 
+            <button open-type="share" class="share-button share">
+              <image src="/images/share_button.png" class="icon"/>分享
+            </button>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="assessment-item">
+      <view class="content">
         <image src="/pages/assessment/image/16personalities.png" mode="aspectFill" class="profile-pic"/>
         <view class="text-block">
           <text class="title">MBTI职业性格测试</text>
