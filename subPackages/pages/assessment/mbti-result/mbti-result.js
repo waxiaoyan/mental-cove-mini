@@ -12,11 +12,11 @@ Page({
     progressColors:['#3c3ff0da','#20ca4b','#ed7d31','#5ea4f5','#a5a4a4']
   },
   
-  backToAccessment(){
-    wx.reLaunch({
-      url: '/pages/assessment/assessment',
-    })
-  },
+  // backToAccessment(){
+  //   wx.reLaunch({
+  //     url: '/pages/assessment/assessment',
+  //   })
+  // },
   /**
    * Lifecycle function--Called when page load
    */
@@ -24,11 +24,15 @@ Page({
     if (options.results) {
       try {
         const results = JSON.parse(decodeURIComponent(options.results));
+        let mbtiItem
+        if (Array.isArray(results)) {
+           mbtiItem = results.find(item => item.assessmentType === "MBTI");
+        }
         this.setData({
-          mbtiType: results.mbtiType || results[0].assessmentResult.mbtiType,
-          personality: results.personality || results[0].assessmentResult.personality,
+          mbtiType: results.mbtiType || mbtiItem.assessmentResult.mbtiType,
+          personality: results.personality || mbtiItem.assessmentResult.personality,
           desc: results.desc,
-          percentages: results.percentages || results[0].assessmentResult.percentages
+          percentages: results.percentages || mbtiItem.assessmentResult.percentages
         });
       } catch (e) {
         console.error('解析结果发生错误:', e);

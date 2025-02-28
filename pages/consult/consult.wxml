@@ -4,7 +4,7 @@
 <view class="container">
   <view class="title">心理咨询预约</view>
   <view class="content">
-    <text class="text">欢迎来到燕子心约心理咨询服务，我们专注于提供专业、温暖的心理支持，帮助您找到内心的平静与解答。</text>
+    <text>欢迎来到燕子心约心理咨询服务，我们专注于提供专业、温暖的心理支持，帮助您找到内心的平静与解答。</text>
     <view class="contact">
       <image class="wechat-icon" src="/images/wechat-icon.png"></image>
       <text>预约咨询请添加微信：<text class="highlight">1936618080</text></text>

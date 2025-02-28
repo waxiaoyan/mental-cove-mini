@@ -8,7 +8,7 @@
           <text class="subTitle">共20题</text>
           <view class="buttons">
             <button class="share-button assess" bindtap="sdsQuestionnaire">测试</button> 
-            <button open-type="share" class="share-button share">
+            <button open-type="share" data-type="sds" bindtap="setShareType"  class="share-button share">
               <image src="/images/share_button.png" class="icon"/>分享
             </button>
           </view>
@@ -23,7 +23,7 @@
           <text class="subTitle">经典93题版测试</text>
           <view class="buttons">
             <button class="share-button assess" bindtap="mbtiQuestionnaire">测试</button> 
-            <button open-type="share" class="share-button share">
+            <button open-type="share" data-type="mbti" bindtap="setShareType"  class="share-button share">
               <image src="/images/share_button.png" class="icon"/>分享
             </button>
           </view>

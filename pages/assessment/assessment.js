@@ -6,7 +6,8 @@ Page({
    * Page initial data
    */
   data: {
-    showLoginModal: false
+    showLoginModal: false,
+    currentShareType: 'sds'
   },
 
   /**
@@ -99,24 +100,25 @@ Page({
    * Called when user click on the top right corner to share
    */
   onShareAppMessage() {
-    return {
-      title: '心理测评 - MBTI职业性格测试',
-      path: '/pages/assessment/assessment', // 分享的路径
-      imageUrl: '/pages/assessment/image/16personalities.png', // 分享的图片
-      success: function (res) {
-        wx.showToast({
-          title: '分享成功',
-          icon: 'success',
-          duration: 2000
-        });
+    const shareConfig = {
+      sds: {
+        title: '抑郁自评量表(SDS)',
+        path: '/pages/assessment/assessment',
+        imageUrl: '/pages/assessment/image/sds.jpg'
       },
-      fail: function (res) {
-        wx.showToast({
-          title: '分享失败',
-          icon: 'none',
-          duration: 2000
-        });
+      mbti: {
+        title: 'MBTI职业性格测试',
+        path: '/pages/assessment/assessment',
+        imageUrl: '/pages/assessment/image/16personalities.png'
       }
-    };
+    }
+    return shareConfig[this.data.currentShareType] || {
+      title: '心理测评',
+      path: '/pages/assessment/assessment'
+    }
+  },
+  setShareType(e) {
+    const type = e.currentTarget.dataset.type
+    this.setData({ currentShareType: type })
   }
 })

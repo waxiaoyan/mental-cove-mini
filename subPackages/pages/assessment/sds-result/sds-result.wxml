@@ -1,4 +1,4 @@
-<navigation-bar  title="SDS抑郁测评结果" bind:tap="backToAccessment" back="{{true}}" ></navigation-bar>
+<navigation-bar  title="SDS抑郁测评结果" back="{{true}}" ></navigation-bar>
 <view class="container">
   <!-- 评分卡片 -->
   <view class="result-card">
@@ -8,7 +8,7 @@
     </view>
 
     <view class="assessment-box">
-      <text class="assessment-title">评估结果：</text>
+      <text class="assessment-title">评估结果: </text>
       <text class="assessment-level" style="color: {{resultColor}};">{{assessment.level}}</text>
     </view>
   </view>

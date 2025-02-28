@@ -16,9 +16,14 @@ Page({
   onLoad(options) {
     if (options.results) {
       try {
-        const result = JSON.parse(decodeURIComponent(options.results));
+        const results = JSON.parse(decodeURIComponent(options.results));
+        let sdsItem;
+         if (Array.isArray(results)) {
+           sdsItem = results.find(item => item.assessmentType === "SDS");
+           console.log('come in...')
+        }
         let level = '', desc = '', explanation = '', suggestion = '', score = 0, resultColor = ''
-        score = result.score;
+        score = results.score || sdsItem.assessmentResult.score;
         if (score >= 25 && score <= 49) {
           resultColor = '#4CAF50';
         } else if (score >= 50 && score <= 59) {
@@ -28,9 +33,9 @@ Page({
         } else if(score >= 70) {
           resultColor = '#F44336';
         }
-        level = result.result;
-        explanation = result.explanation;
-        suggestion = result.suggestion;
+        level = results.result || sdsItem.assessmentResult.result;
+        explanation = results.explanation || sdsItem.assessmentResult.explanation;
+        suggestion = results.suggestion || sdsItem.assessmentResult.suggestion;
         this.setData({
           resultColor: resultColor,
           score: score,

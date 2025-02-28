@@ -8,6 +8,7 @@
   background: white;
   border-radius: 16rpx;
   margin: 80rpx;
+  width:40%;
   box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.1);
 }
 
@@ -32,6 +33,7 @@
 
 .assessment-box {
   padding: 40rpx;
+  text-align: center;
 }
 
 .assessment-title {

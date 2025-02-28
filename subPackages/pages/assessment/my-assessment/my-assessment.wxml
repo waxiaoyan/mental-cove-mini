@@ -3,16 +3,17 @@
   <block wx:for="{{assessmentResults}}" wx:key="unique">
     <view class="assessment-item">
       <view class="content">
-        <image src="/pages/assessment/image/16personalities.png" mode="aspectFill" class="profile-pic"/>
+        <image src="{{item.assessmentType === 'MBTI' ? '/pages/assessment/image/16personalities.png' : '/pages/assessment/image/sds.jpg'}}" mode="aspectFill" class="profile-pic"/>
         <view class="text-block">
           <text class="title">{{item.assessmentDesc}}</text>
           <text class="subTitle">测评日期：{{item.assessmentTime}}</text>
           <view class="buttons">
-            <button class="assessment-button" bindtap="assessmentResult">测评结果</button> <button class="assessment-button" bindtap="goToAssessment">重新测评</button> 
+            <button class="assessment-button" bindtap="assessmentResult" data-type="{{item.assessmentType}}">测评结果</button> <button class="assessment-button" bindtap="goToAssessment">重新测评</button> 
           </view>
         </view>
       </view>
     </view>
+    
     </block>
       <view class="no-records-container" wx:if="{{!assessmentResults.length}}">
         <image src="../../image/assessment_icon.svg" class="no-records-image"></image>

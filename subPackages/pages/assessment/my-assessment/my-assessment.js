@@ -48,10 +48,18 @@ Page({
             url: '/pages/assessment/assessment'
         });
   },
-  assessmentResult(){
-     wx.navigateTo({
-            url: '/subPackages/pages/assessment/mbti-result/mbti-result?results=' + encodeURIComponent(JSON.stringify(this.data.assessmentResults))
-     });
+  assessmentResult(e){
+    const type = e.currentTarget.dataset.type
+    if (type === 'MBTI') {
+      wx.navigateTo({
+        url: '/subPackages/pages/assessment/mbti-result/mbti-result?results=' + encodeURIComponent(JSON.stringify(this.data.assessmentResults))
+      });
+    } else if (type === 'SDS') {
+      wx.navigateTo({
+        url: '/subPackages/pages/assessment/sds-result/sds-result?results=' + encodeURIComponent(JSON.stringify(this.data.assessmentResults))
+      });
+    }
+
   },
 
   /**
